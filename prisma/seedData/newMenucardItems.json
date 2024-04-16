@@ -1,0 +1,3222 @@
+[
+  {
+    "id": 1,
+    "name": "Bruschetta al pomodoro\r",
+    "priority": 1,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 1490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 2,
+    "name": "Buffala caprese\r",
+    "priority": 2,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 3,
+    "name": "Carpaccio with arugula, olives, parmesan\r",
+    "priority": 3,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 4,
+    "name": "Antipasti meat Pera D'oro\r",
+    "priority": 4,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 5,
+    "name": "Antipasti veggie grill vegetables, cheese\r",
+    "priority": 5,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 2490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 6,
+    "name": "Black mussels in white wine butter sauce\r",
+    "priority": 6,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 7,
+    "name": "Aranchini rice balls stuffed with spinach, ham, parmesan \r",
+    "priority": 7,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 2490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 8,
+    "name": "Tomato soup with grilled goat cheese\r",
+    "priority": 8,
+    "type": "FOOD",
+    "menucardCategoryId": 2,
+    "price": 1790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 9,
+    "name": "Meat soup with meat tortellini\r",
+    "priority": 9,
+    "type": "FOOD",
+    "menucardCategoryId": 2,
+    "price": 1790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 10,
+    "name": "Parmesan salad\r",
+    "priority": 10,
+    "type": "FOOD",
+    "menucardCategoryId": 3,
+    "price": 2790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 11,
+    "name": "Shrimp salad\r",
+    "priority": 11,
+    "type": "FOOD",
+    "menucardCategoryId": 3,
+    "price": 3790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 12,
+    "name": "Tuna salad\r",
+    "priority": 12,
+    "type": "FOOD",
+    "menucardCategoryId": 3,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 13,
+    "name": "Beef strips with mixed salad, taleggio cheese dressing\r",
+    "priority": 13,
+    "type": "FOOD",
+    "menucardCategoryId": 3,
+    "price": 5990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 14,
+    "name": "Mixed salad\r",
+    "priority": 14,
+    "type": "FOOD",
+    "menucardCategoryId": 3,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 15,
+    "name": "Panzanella\r",
+    "priority": 15,
+    "type": "FOOD",
+    "menucardCategoryId": 3,
+    "price": 2790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 16,
+    "name": "Mushrooms stuffed with ricotta\r",
+    "priority": 16,
+    "type": "FOOD",
+    "menucardCategoryId": 4,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 17,
+    "name": "Parmigiani Di Melanzane with fried aubergines\r",
+    "priority": 17,
+    "type": "FOOD",
+    "menucardCategoryId": 4,
+    "price": 2490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 18,
+    "name": "Bolognese tagliatelle\r",
+    "priority": 18,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 3490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 19,
+    "name": "Penne Arrabiata\r",
+    "priority": 19,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 20,
+    "name": "Carbonara\r",
+    "priority": 20,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 2890,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 21,
+    "name": "Aglio e olio\r",
+    "priority": 21,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 22,
+    "name": "Tagliatelle salmon, spinach\r",
+    "priority": 22,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 4590,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 23,
+    "name": "Gnocchi with 4 cheese sauce\r",
+    "priority": 23,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 3490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 24,
+    "name": "Chicken penne with pesto\r",
+    "priority": 24,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 25,
+    "name": "Risotto with Parmesan\r",
+    "priority": 25,
+    "type": "FOOD",
+    "menucardCategoryId": 6,
+    "price": 2490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 26,
+    "name": "Tomato risotto with cocktail shrimp\r",
+    "priority": 26,
+    "type": "FOOD",
+    "menucardCategoryId": 6,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 27,
+    "name": "Forest mushroom risotto\r",
+    "priority": 27,
+    "type": "FOOD",
+    "menucardCategoryId": 6,
+    "price": 3490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 28,
+    "name": "Risotto with seafood\r",
+    "priority": 28,
+    "type": "FOOD",
+    "menucardCategoryId": 6,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 29,
+    "name": "Rosé duck breast with spicy cherry casserole\r",
+    "priority": 29,
+    "type": "FOOD",
+    "menucardCategoryId": 7,
+    "price": 4990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 30,
+    "name": "Chicken breast with Parmesan sauce\r",
+    "priority": 30,
+    "type": "FOOD",
+    "menucardCategoryId": 7,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 31,
+    "name": "Chicken breast steak with rosemary butter sauce\r",
+    "priority": 31,
+    "type": "FOOD",
+    "menucardCategoryId": 7,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 32,
+    "name": "Roast lamb shank in rosemary spice crust\r",
+    "priority": 32,
+    "type": "FOOD",
+    "menucardCategoryId": 7,
+    "price": 9990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 33,
+    "name": "Pork tenderloin with thyme wild mushrooms\r",
+    "priority": 33,
+    "type": "FOOD",
+    "menucardCategoryId": 7,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 34,
+    "name": "Beef steak with grilled mushrooms in red butter sauce\r",
+    "priority": 34,
+    "type": "FOOD",
+    "menucardCategoryId": 7,
+    "price": 8990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 35,
+    "name": "Grilled branzino with grilled vegetables\r",
+    "priority": 35,
+    "type": "FOOD",
+    "menucardCategoryId": 8,
+    "price": 4990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 36,
+    "name": "Chilli garlic prawn pizza with bread\r",
+    "priority": 36,
+    "type": "FOOD",
+    "menucardCategoryId": 8,
+    "price": 4990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 37,
+    "name": "Grilled octopus with Mediterranean grilled vegetables\r",
+    "priority": 37,
+    "type": "FOOD",
+    "menucardCategoryId": 8,
+    "price": 9990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 38,
+    "name": "Tuscan salmon steak grilled with polenta\r",
+    "priority": 38,
+    "type": "FOOD",
+    "menucardCategoryId": 8,
+    "price": 4990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 39,
+    "name": "Calamari fritti with fresh mixed salad\r",
+    "priority": 39,
+    "type": "FOOD",
+    "menucardCategoryId": 8,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 40,
+    "name": "Saltimbocca\r",
+    "priority": 40,
+    "type": "FOOD",
+    "menucardCategoryId": 9,
+    "price": 4990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 41,
+    "name": "Ossobuco\r",
+    "priority": 41,
+    "type": "FOOD",
+    "menucardCategoryId": 9,
+    "price": 6990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 42,
+    "name": "Roasted steamed loin steak with mashed potatoes\r",
+    "priority": 42,
+    "type": "FOOD",
+    "menucardCategoryId": 9,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 43,
+    "name": "Salsa di lecsó\r",
+    "priority": 43,
+    "type": "FOOD",
+    "menucardCategoryId": 9,
+    "price": 5990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 44,
+    "name": "Chicken breast steak with mascarpone and spinach gnocchi\r",
+    "priority": 44,
+    "type": "FOOD",
+    "menucardCategoryId": 9,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 45,
+    "name": "French fries\r",
+    "priority": 45,
+    "type": "FOOD",
+    "menucardCategoryId": 10,
+    "price": 1290,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 46,
+    "name": "Sweet potato\r",
+    "priority": 46,
+    "type": "FOOD",
+    "menucardCategoryId": 10,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 47,
+    "name": "Jasmine rice\r",
+    "priority": 47,
+    "type": "FOOD",
+    "menucardCategoryId": 10,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 48,
+    "name": "Grilled polenta\r",
+    "priority": 48,
+    "type": "FOOD",
+    "menucardCategoryId": 10,
+    "price": 1290,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 49,
+    "name": "Grilled vegetables\r",
+    "priority": 49,
+    "type": "FOOD",
+    "menucardCategoryId": 10,
+    "price": 1490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 50,
+    "name": "Tiramisu classic\r",
+    "priority": 50,
+    "type": "FOOD",
+    "menucardCategoryId": 11,
+    "price": 1790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 51,
+    "name": "Panna Cotta with mango\r",
+    "priority": 51,
+    "type": "FOOD",
+    "menucardCategoryId": 11,
+    "price": 1790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 52,
+    "name": "Cake Barozzi\r",
+    "priority": 52,
+    "type": "FOOD",
+    "menucardCategoryId": 11,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 53,
+    "name": "Margarita pizza\r",
+    "priority": 53,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 2490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 54,
+    "name": "Caprese pizza\r",
+    "priority": 54,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 55,
+    "name": "Prosciutto pizza\r",
+    "priority": 55,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 56,
+    "name": "Prosciutto e Fungi pizza\r",
+    "priority": 56,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 57,
+    "name": "Quattro Formaggi pizza\r",
+    "priority": 57,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3590,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 58,
+    "name": "Capricciosa pizza\r",
+    "priority": 58,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 59,
+    "name": "Tonno e cipolla pizza\r",
+    "priority": 59,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3290,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 60,
+    "name": "Pizza di Napoli \r",
+    "priority": 60,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 61,
+    "name": "Bolognese pizza\r",
+    "priority": 61,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 62,
+    "name": "Gambaretti e arugula pizza\r",
+    "priority": 62,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 63,
+    "name": "Frutti di Mare pizza\r",
+    "priority": 63,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 64,
+    "name": "Pizza al salami \r",
+    "priority": 64,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 65,
+    "name": "Pizza Pera D'oro\r",
+    "priority": 65,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 66,
+    "name": "Quattro Stagioni pizza\r",
+    "priority": 66,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 67,
+    "name": "Ortolani pizza\r",
+    "priority": 67,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 68,
+    "name": "Gargano pizza\r",
+    "priority": 68,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 4490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 82,
+    "name": "Peroni pitcher\r",
+    "priority": 69,
+    "type": "FOOD",
+    "menucardCategoryId": 13,
+    "price": 1400,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 83,
+    "name": "Peroni glass\r",
+    "priority": 70,
+    "type": "FOOD",
+    "menucardCategoryId": 13,
+    "price": 840,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 84,
+    "name": "Pilsner jug\r",
+    "priority": 71,
+    "type": "FOOD",
+    "menucardCategoryId": 13,
+    "price": 1200,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 85,
+    "name": "Aperol spritz\r",
+    "priority": 72,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 2390,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 86,
+    "name": "San Pellegrino 0,25\r",
+    "priority": 73,
+    "type": "FOOD",
+    "menucardCategoryId": 16,
+    "price": 850,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 87,
+    "name": "San Pellegrino 0,75\r",
+    "priority": 74,
+    "type": "FOOD",
+    "menucardCategoryId": 16,
+    "price": 1490,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 88,
+    "name": "San pellegrino 0.25\r",
+    "priority": 75,
+    "type": "FOOD",
+    "menucardCategoryId": 16,
+    "price": 850,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 89,
+    "name": "Szentkirályi free 0.33\r",
+    "priority": 76,
+    "type": "FOOD",
+    "menucardCategoryId": 16,
+    "price": 490,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 90,
+    "name": "Szentkirályi acid 0.33\r",
+    "priority": 77,
+    "type": "FOOD",
+    "menucardCategoryId": 16,
+    "price": 490,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 91,
+    "name": "Free from St. Cyrillic 0.75\r",
+    "priority": 78,
+    "type": "FOOD",
+    "menucardCategoryId": 16,
+    "price": 790,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 92,
+    "name": "St. Cyrillic acid 0.75\r",
+    "priority": 79,
+    "type": "FOOD",
+    "menucardCategoryId": 16,
+    "price": 790,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 93,
+    "name": "Pilsner glass\r",
+    "priority": 80,
+    "type": "FOOD",
+    "menucardCategoryId": 13,
+    "price": 720,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 94,
+    "name": "Peroni Capri\r",
+    "priority": 81,
+    "type": "FOOD",
+    "menucardCategoryId": 15,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 95,
+    "name": "Kronenbourg blanc\r",
+    "priority": 82,
+    "type": "FOOD",
+    "menucardCategoryId": 15,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 96,
+    "name": "Peroni 0,0\r",
+    "priority": 83,
+    "type": "FOOD",
+    "menucardCategoryId": 15,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 97,
+    "name": "Coca cola\r",
+    "priority": 84,
+    "type": "FOOD",
+    "menucardCategoryId": 17,
+    "price": 690,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 98,
+    "name": "Cola zero\r",
+    "priority": 85,
+    "type": "FOOD",
+    "menucardCategoryId": 17,
+    "price": 690,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 99,
+    "name": "Tonic\r",
+    "priority": 86,
+    "type": "FOOD",
+    "menucardCategoryId": 17,
+    "price": 690,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 100,
+    "name": "Canada dry\r",
+    "priority": 87,
+    "type": "FOOD",
+    "menucardCategoryId": 17,
+    "price": 690,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 101,
+    "name": "Oranges Schweppes \r",
+    "priority": 88,
+    "type": "FOOD",
+    "menucardCategoryId": 17,
+    "price": 690,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 102,
+    "name": "Orange juice\r",
+    "priority": 89,
+    "type": "FOOD",
+    "menucardCategoryId": 18,
+    "price": 790,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 103,
+    "name": "Apple juice\r",
+    "priority": 90,
+    "type": "FOOD",
+    "menucardCategoryId": 18,
+    "price": 790,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 104,
+    "name": "Autumn juice\r",
+    "priority": 91,
+    "type": "FOOD",
+    "menucardCategoryId": 18,
+    "price": 790,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 105,
+    "name": "Pear juice\r",
+    "priority": 92,
+    "type": "FOOD",
+    "menucardCategoryId": 18,
+    "price": 790,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 106,
+    "name": "Limo cassoulet 0.3\r",
+    "priority": 93,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 750,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 107,
+    "name": "Limo classic 0.5\r",
+    "priority": 94,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 1190,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 108,
+    "name": "Limo Strawberry 0.3\r",
+    "priority": 95,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 109,
+    "name": "Limo Strawberry 0.5\r",
+    "priority": 96,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 110,
+    "name": "Limo elderflower 0.3\r",
+    "priority": 97,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 111,
+    "name": "Limo curling 0.5\r",
+    "priority": 98,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 112,
+    "name": "Limo passion fruit 0.3\r",
+    "priority": 99,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 113,
+    "name": "Limo passion fruit 0.5\r",
+    "priority": 100,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 114,
+    "name": "Limo blackcurrant 0.3\r",
+    "priority": 101,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 115,
+    "name": "Limo blackcurrant 0.5\r",
+    "priority": 102,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 116,
+    "name": "Iced lemon tea 0.3\r",
+    "priority": 103,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 750,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 117,
+    "name": "Iced lemon tea 0.5\r",
+    "priority": 104,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 1190,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 118,
+    "name": "Strawberry syrup 0.3\r",
+    "priority": 105,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 750,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 119,
+    "name": "Strawberry syrup 0.3\r",
+    "priority": 106,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 750,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 120,
+    "name": "Strawberry syrup 0.5\r",
+    "priority": 107,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 121,
+    "name": "Blackcurrant syrup 0.3\r",
+    "priority": 108,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 122,
+    "name": "Blackcurrant syrup 0.5\r",
+    "priority": 109,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 123,
+    "name": "Elderberry syrup 0.3\r",
+    "priority": 110,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 124,
+    "name": "Elderberry syrup 0.5\r",
+    "priority": 111,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 125,
+    "name": "Syrup passion Fruit 0,3\r",
+    "priority": 112,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 126,
+    "name": "Syrup passion fruit 0.5\r",
+    "priority": 113,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 127,
+    "name": "Ristretto\r",
+    "priority": 114,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 690,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 128,
+    "name": "Espresso \r",
+    "priority": 115,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 690,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 129,
+    "name": "Espresso macchiato \r",
+    "priority": 116,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 690,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 130,
+    "name": "Cappuccino \r",
+    "priority": 117,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 790,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 131,
+    "name": "Cafe latte\r",
+    "priority": 118,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 990,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 132,
+    "name": "Latte macchiato \r",
+    "priority": 119,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 990,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 133,
+    "name": "Melange\r",
+    "priority": 120,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 1190,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 134,
+    "name": "Iced coffee\r",
+    "priority": 121,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 1790,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 135,
+    "name": "Irish coffee\r",
+    "priority": 122,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 1590,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 136,
+    "name": "Vegetable milk\r",
+    "priority": 123,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 250,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 137,
+    "name": "Whipped cream\r",
+    "priority": 124,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 250,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 138,
+    "name": "Manuel tea\r",
+    "priority": 125,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 790,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 139,
+    "name": "Hot chocolate\r",
+    "priority": 126,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 1190,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 140,
+    "name": "Honey\r",
+    "priority": 127,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 200,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 141,
+    "name": "Martini bianco 8cl\r",
+    "priority": 128,
+    "type": "FOOD",
+    "menucardCategoryId": 22,
+    "price": 950,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 142,
+    "name": "Martini rosso 8cl\r",
+    "priority": 129,
+    "type": "FOOD",
+    "menucardCategoryId": 22,
+    "price": 950,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 143,
+    "name": "Aperol 8cl\r",
+    "priority": 130,
+    "type": "FOOD",
+    "menucardCategoryId": 22,
+    "price": 1490,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 144,
+    "name": "Campari 8cl\r",
+    "priority": 131,
+    "type": "FOOD",
+    "menucardCategoryId": 22,
+    "price": 2100,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 145,
+    "name": "Martini extra dry 8cl\r",
+    "priority": 132,
+    "type": "FOOD",
+    "menucardCategoryId": 22,
+    "price": 950,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 146,
+    "name": "Chivas regal 2cl\r",
+    "priority": 133,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 850,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 147,
+    "name": "Chivas regal 4cl\r",
+    "priority": 134,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1700,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 148,
+    "name": "Jameson 2cl\r",
+    "priority": 135,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 600,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 149,
+    "name": "Jameson 4cl\r",
+    "priority": 136,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1200,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 150,
+    "name": "Sierra silver 2cl\r",
+    "priority": 137,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 700,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 151,
+    "name": "Sierra silver 4cl\r",
+    "priority": 138,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1400,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 152,
+    "name": "Sierra gold 2cl\r",
+    "priority": 139,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 700,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 153,
+    "name": "Sierra gold 4cl\r",
+    "priority": 140,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1400,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 154,
+    "name": "Bacardi 2c\r",
+    "priority": 141,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 495,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 155,
+    "name": "Bacardi 4cl\r",
+    "priority": 142,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 156,
+    "name": "Beefaeter 2cl\r",
+    "priority": 143,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 495,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 157,
+    "name": "Beefaeter 4cl\r",
+    "priority": 144,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 158,
+    "name": "Grappa fior di vite 2cl\r",
+    "priority": 145,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 700,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 159,
+    "name": "Grappa fior di vite 4cl\r",
+    "priority": 146,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1400,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 160,
+    "name": "Finlandia 2cl\r",
+    "priority": 147,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 450,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 161,
+    "name": "Finlandia 4cl\r",
+    "priority": 148,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 900,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 162,
+    "name": "Grey goose 2cl\r",
+    "priority": 149,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1100,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 163,
+    "name": "Grey goose 4cl\r",
+    "priority": 150,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 2200,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 164,
+    "name": "Unicum 2cl\r",
+    "priority": 151,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 450,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 165,
+    "name": "Unicum 4cl\r",
+    "priority": 152,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 900,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 166,
+    "name": "Unicum plum 2cl\r",
+    "priority": 153,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 450,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 167,
+    "name": "Unicum plum 4cl\r",
+    "priority": 154,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 900,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 168,
+    "name": "Jagermaister 2cl\r",
+    "priority": 155,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 450,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 169,
+    "name": "Jagermaister 4cl\r",
+    "priority": 156,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 900,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 170,
+    "name": "Limonchello 2cl\r",
+    "priority": 157,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 450,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 171,
+    "name": "Limoncello 4cl\r",
+    "priority": 158,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 900,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 172,
+    "name": "Sambucca 2cl\r",
+    "priority": 159,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 600,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 173,
+    "name": "Sambucca 4cl\r",
+    "priority": 160,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1200,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 174,
+    "name": "D'sorrento Amaretto 2cl\r",
+    "priority": 161,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 700,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 175,
+    "name": "D'sorrento Amaretto 4cl\r",
+    "priority": 162,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1400,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 176,
+    "name": "Árpád plum brandy 2cl\r",
+    "priority": 163,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 900,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 177,
+    "name": "Árpád plum brandy 4 cl\r",
+    "priority": 164,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1800,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 178,
+    "name": "Árpád pear brandy 2 cl\r",
+    "priority": 165,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 900,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 179,
+    "name": "Árpád pear brandy 4 cl\r",
+    "priority": 166,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1800,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 180,
+    "name": "Árpád premium apricot 2cl\r",
+    "priority": 167,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1200,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 181,
+    "name": "Árpád premium apricot 4cl\r",
+    "priority": 168,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 2400,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 182,
+    "name": "Pizza box\r",
+    "priority": 169,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 200,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 183,
+    "name": "Takeaway box \r",
+    "priority": 170,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 100,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 184,
+    "name": "Delivery charge 1 (290)\r",
+    "priority": 171,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 290,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 185,
+    "name": "Delivery charge 2 (490)\r",
+    "priority": 172,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 186,
+    "name": "Delivery charge 399\r",
+    "priority": 173,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 399,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 187,
+    "name": "Delivery charge 499\r",
+    "priority": 174,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 499,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 188,
+    "name": "Delivery charge 599\r",
+    "priority": 175,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 599,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 189,
+    "name": "Delivery charge 699\r",
+    "priority": 176,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 699,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 190,
+    "name": "Delivery charge 799\r",
+    "priority": 177,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 799,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 191,
+    "name": "Delivery charge 899\r",
+    "priority": 178,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 899,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 192,
+    "name": "Delivery charge 999\r",
+    "priority": 179,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 999,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 193,
+    "name": "Delivery charge 1099\r",
+    "priority": 180,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 1099,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 194,
+    "name": "Delivery charge 1199\r",
+    "priority": 181,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 1199,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 195,
+    "name": "Delivery charge 1299\r",
+    "priority": 182,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 1299,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 196,
+    "name": "Delivery charge 1399\r",
+    "priority": 183,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 1399,
+    "onsiteVatId": 2,
+    "deliveryVatId": 2
+  },
+  {
+    "id": 197,
+    "name": "Árpád premium gypsy 2cl\r",
+    "priority": 184,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1200,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 198,
+    "name": "Árpád premium gypsy cherry 4cl\r",
+    "priority": 185,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 2400,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 199,
+    "name": "L'americano\r",
+    "priority": 186,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 1990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 200,
+    "name": "Fiero&tonic\r",
+    "priority": 187,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 2390,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 201,
+    "name": "Negroni\r",
+    "priority": 188,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 1990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 202,
+    "name": "Puccini\r",
+    "priority": 189,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 1990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 203,
+    "name": "Bellini\r",
+    "priority": 190,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 1990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 204,
+    "name": "Hugo\r",
+    "priority": 191,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 1590,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 205,
+    "name": "Garibaldi\r",
+    "priority": 192,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 2990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 206,
+    "name": "Gin and It\r",
+    "priority": 193,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 1590,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 207,
+    "name": "VodkaMartini\r",
+    "priority": 194,
+    "type": "FOOD",
+    "menucardCategoryId": 24,
+    "price": 1990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 208,
+    "name": "Irsai Oliver dl\r",
+    "priority": 195,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 690,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 209,
+    "name": "Irsai Olivér bottle\r",
+    "priority": 196,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 5175,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 210,
+    "name": "Olaszrizling dl\r",
+    "priority": 197,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 690,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 211,
+    "name": "Olaszrizling bottle\r",
+    "priority": 198,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 5175,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 212,
+    "name": "Vignetti Zanatta Orion\r",
+    "priority": 199,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 6690,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 213,
+    "name": "Villa Carume Grillo DOC\r",
+    "priority": 200,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 7190,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 214,
+    "name": "Corte Adami Soave DOC\r",
+    "priority": 201,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 7290,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 215,
+    "name": "Le Manzane Pinot Grigio DOC\r",
+    "priority": 202,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 8290,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 216,
+    "name": "Bodri Malbec dl\r",
+    "priority": 203,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 590,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 217,
+    "name": "Bodri Malbec bottle\r",
+    "priority": 204,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 4485,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 218,
+    "name": "Concilio marzemino dl\r",
+    "priority": 205,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 219,
+    "name": "Concilio marzemino bottle\r",
+    "priority": 206,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 7425,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 220,
+    "name": "San Donaci \"Anticiai\" dl\r",
+    "priority": 207,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 221,
+    "name": "San Donaci \"Anticiai\"\r",
+    "priority": 208,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 7425,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 222,
+    "name": "Villa Carume Nero D'avola DOC\r",
+    "priority": 209,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 7490,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 223,
+    "name": "Zelna \"Bárka\" red\r",
+    "priority": 210,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 7590,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 224,
+    "name": "Tenute Maiano Chianti\r",
+    "priority": 211,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 7590,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 225,
+    "name": "Vignetti Zanatta Cannonau\r",
+    "priority": 212,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 8540,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 226,
+    "name": "Carte Adam Valpolicella DOC\r",
+    "priority": 213,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 8590,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 227,
+    "name": "San Donaci \"primius\" Primitivo\r",
+    "priority": 214,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 8890,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 228,
+    "name": "Pico Maccario \"Lavignone\" Barbera di Asti\r",
+    "priority": 215,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 9990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 229,
+    "name": "Carte Adami Amarone DOC\r",
+    "priority": 216,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 19990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 230,
+    "name": "Bock Rose dl\r",
+    "priority": 217,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 590,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 231,
+    "name": "Bock Rose dl\r",
+    "priority": 218,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 4425,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 232,
+    "name": "Assuli \"Fiordispina\" Rose\r",
+    "priority": 219,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 9190,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 233,
+    "name": "Fossomerlo Grand Cuveé dl\r",
+    "priority": 220,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 234,
+    "name": "Fossomerlo Grand Cuveé bottle \r",
+    "priority": 221,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 7450,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 235,
+    "name": "La Manzane Prosecco Rosé \r",
+    "priority": 222,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 9990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 236,
+    "name": "Baileys 2cl\r",
+    "priority": 223,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 495,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 237,
+    "name": "Baileys 4cl\r",
+    "priority": 224,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 238,
+    "name": "Takeaway glass\r",
+    "priority": 225,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 100,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 239,
+    "name": "Extra topping 1\r",
+    "priority": 226,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 240,
+    "name": "Extra topping 2\r",
+    "priority": 227,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 241,
+    "name": "Extra shrimp\r",
+    "priority": 228,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 1790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 242,
+    "name": "************************\r",
+    "priority": 229,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 0,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 243,
+    "name": "Pera d'oro salad\r",
+    "priority": 230,
+    "type": "FOOD",
+    "menucardCategoryId": 3,
+    "price": 3490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 244,
+    "name": "Apple frog 3/2\r",
+    "priority": 231,
+    "type": "FOOD",
+    "menucardCategoryId": 18,
+    "price": 990,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 245,
+    "name": "Soda\r",
+    "priority": 232,
+    "type": "FOOD",
+    "menucardCategoryId": 16,
+    "price": 100,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 246,
+    "name": "Pizza bread\r",
+    "priority": 233,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 247,
+    "name": "Applesauce 2/3\r",
+    "priority": 234,
+    "type": "FOOD",
+    "menucardCategoryId": 18,
+    "price": 750,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 248,
+    "name": "Applesauce 2/1\r",
+    "priority": 235,
+    "type": "FOOD",
+    "menucardCategoryId": 18,
+    "price": 650,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 249,
+    "name": "Apple Frosh 1/2\r",
+    "priority": 236,
+    "type": "FOOD",
+    "menucardCategoryId": 18,
+    "price": 400,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 250,
+    "name": "Long coffee,Café Lungo\r",
+    "priority": 237,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 690,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 251,
+    "name": "Assuli \"Fiordispina\" Rose dl\r",
+    "priority": 238,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 1230,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 252,
+    "name": "Vignetti Zanatta Orion dl\r",
+    "priority": 239,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 890,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 253,
+    "name": "Forest mushroom cream soup with gnocchi\r",
+    "priority": 240,
+    "type": "FOOD",
+    "menucardCategoryId": 2,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 254,
+    "name": "Gnocchi, wild mushrooms, prosciutto, mascarpone\r",
+    "priority": 241,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 255,
+    "name": "Gluten-free spaghetti\r",
+    "priority": 242,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 256,
+    "name": "Creamy spinach risotto with toasted goat cheese\r",
+    "priority": 243,
+    "type": "FOOD",
+    "menucardCategoryId": 6,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 257,
+    "name": "Chicken breast, eggplant, tomato sauce\r",
+    "priority": 244,
+    "type": "FOOD",
+    "menucardCategoryId": 9,
+    "price": 3490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 258,
+    "name": "Roasted potatoes with rosemary\r",
+    "priority": 245,
+    "type": "FOOD",
+    "menucardCategoryId": 10,
+    "price": 1390,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 259,
+    "name": "Mashed potatoes with Parmesan\r",
+    "priority": 246,
+    "type": "FOOD",
+    "menucardCategoryId": 10,
+    "price": 1790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 260,
+    "name": "Salsiccia pizza\r",
+    "priority": 247,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 261,
+    "name": "Salsiccia e friarielli pizza\r",
+    "priority": 248,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 262,
+    "name": "Salsiccia e pepperoni pizza\r",
+    "priority": 249,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 263,
+    "name": "Hennessy V.S. 4 cl\r",
+    "priority": 250,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 2560,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 264,
+    "name": "Hennessy V.S. 2cl\r",
+    "priority": 251,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1280,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 265,
+    "name": "Grilled pork tenderloin\r",
+    "priority": 252,
+    "type": "FOOD",
+    "menucardCategoryId": 7,
+    "price": 2990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 266,
+    "name": "Takeaway\r",
+    "priority": 253,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 0,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 267,
+    "name": "Tomato sauce\r",
+    "priority": 254,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 268,
+    "name": "Ketchup\r",
+    "priority": 255,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 250,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 269,
+    "name": "Gluten-free gnocchi\r",
+    "priority": 256,
+    "type": "FOOD",
+    "menucardCategoryId": 5,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 270,
+    "name": "Pizza sauce\r",
+    "priority": 257,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 271,
+    "name": "Deposit fee approx.\r",
+    "priority": 258,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 50,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 272,
+    "name": "Pilsner 0,33\r",
+    "priority": 259,
+    "type": "FOOD",
+    "menucardCategoryId": 15,
+    "price": 820,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 273,
+    "name": "Syrup sugar free 3 dl\r",
+    "priority": 260,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 274,
+    "name": "Pancetta pizza\r",
+    "priority": 261,
+    "type": "FOOD",
+    "menucardCategoryId": 12,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 275,
+    "name": "Extra mozzarella\r",
+    "priority": 262,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 276,
+    "name": "Extra prosciutto\r",
+    "priority": 263,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 277,
+    "name": "Extra mushrooms\r",
+    "priority": 264,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 278,
+    "name": "Extra gorgonzola\r",
+    "priority": 265,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 279,
+    "name": "Extra artichoke\r",
+    "priority": 266,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 280,
+    "name": "Extra olives\r",
+    "priority": 267,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 281,
+    "name": "Extra tuna\r",
+    "priority": 268,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 282,
+    "name": "Extra red onion\r",
+    "priority": 269,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 283,
+    "name": "Extra Anchovy\r",
+    "priority": 270,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 284,
+    "name": "Extra arugula\r",
+    "priority": 271,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 285,
+    "name": "Extra Italian salami\r",
+    "priority": 272,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 286,
+    "name": "Extra pear\r",
+    "priority": 273,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 287,
+    "name": "Extra grilled vegetables\r",
+    "priority": 274,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 288,
+    "name": "Extra sheep's cheese\r",
+    "priority": 275,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 289,
+    "name": "Extra pepperoni\r",
+    "priority": 276,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 290,
+    "name": "Extra pancetta\r",
+    "priority": 277,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 291,
+    "name": "Extra seafood\r",
+    "priority": 278,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 1790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 292,
+    "name": "Extra mussels\r",
+    "priority": 279,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 1790,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 293,
+    "name": "Extra friarielli\r",
+    "priority": 280,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 294,
+    "name": "Extra chicken breast cubes\r",
+    "priority": 281,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 295,
+    "name": "Mixtea\r",
+    "priority": 282,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 790,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 296,
+    "name": "Lemonade cm with syrup 5dl\r",
+    "priority": 283,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 297,
+    "name": "Dips\r",
+    "priority": 284,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 298,
+    "name": "Dips\r",
+    "priority": 285,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 299,
+    "name": "Syrup sugar free 5 dl\r",
+    "priority": 286,
+    "type": "FOOD",
+    "menucardCategoryId": 20,
+    "price": 1390,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 300,
+    "name": "Limo cm with syrup 3 dl\r",
+    "priority": 287,
+    "type": "FOOD",
+    "menucardCategoryId": 19,
+    "price": 850,
+    "onsiteVatId": 3,
+    "deliveryVatId": 3
+  },
+  {
+    "id": 301,
+    "name": "Minestrone soup\r",
+    "priority": 288,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 302,
+    "name": "Cabbage gnocchi with duck legs\r",
+    "priority": 289,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 5990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 303,
+    "name": "Profiterol\r",
+    "priority": 290,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 304,
+    "name": "Pizza alla zucca\r",
+    "priority": 291,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 305,
+    "name": "Ciabatta\r",
+    "priority": 292,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 390,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 306,
+    "name": "Milk\r",
+    "priority": 293,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 100,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 307,
+    "name": "Calamari without salami\r",
+    "priority": 294,
+    "type": "FOOD",
+    "menucardCategoryId": 8,
+    "price": 2490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 308,
+    "name": "San Donachi primus primitivo dl\r",
+    "priority": 295,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 1200,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 309,
+    "name": "Parmesan\r",
+    "priority": 296,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 590,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 310,
+    "name": "Fortified wine\r",
+    "priority": 297,
+    "type": "FOOD",
+    "menucardCategoryId": 21,
+    "price": 990,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 311,
+    "name": "Cabbage gnocchi, roast duck leg, guanciale\r",
+    "priority": 298,
+    "type": "FOOD",
+    "menucardCategoryId": 9,
+    "price": 5990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 312,
+    "name": "Gnocchi with pumpkin Chicken\r",
+    "priority": 299,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 4990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 313,
+    "name": "Gnocchi with pumpkin Duck breast\r",
+    "priority": 300,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 5990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 314,
+    "name": "Minestrone soup\r",
+    "priority": 301,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 315,
+    "name": "Bowl for two\r",
+    "priority": 302,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 10990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 316,
+    "name": "Package\r",
+    "priority": 303,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 6990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 317,
+    "name": "Carpaccio\r",
+    "priority": 304,
+    "type": "FOOD",
+    "menucardCategoryId": 1,
+    "price": 3990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 318,
+    "name": "Primitivo glass\r",
+    "priority": 305,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 4425,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 319,
+    "name": "Primitivo dl\r",
+    "priority": 306,
+    "type": "FOOD",
+    "menucardCategoryId": 25,
+    "price": 590,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 320,
+    "name": "Voucher\r",
+    "priority": 307,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": -5000,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 321,
+    "name": "Business menu 2 courses\r",
+    "priority": 308,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 4390,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 322,
+    "name": "Business menu 3 courses\r",
+    "priority": 309,
+    "type": "FOOD",
+    "menucardCategoryId": 27,
+    "price": 4990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 323,
+    "name": "Extra pear\r",
+    "priority": 310,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 690,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 324,
+    "name": "Cream of celery soup\r",
+    "priority": 311,
+    "type": "FOOD",
+    "menucardCategoryId": 28,
+    "price": 1990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 325,
+    "name": "Fresh salad, pomegranate, goat cheese\r",
+    "priority": 312,
+    "type": "FOOD",
+    "menucardCategoryId": 28,
+    "price": 2490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 326,
+    "name": "Risotto with capicum cream,grilled branzino\r",
+    "priority": 313,
+    "type": "FOOD",
+    "menucardCategoryId": 28,
+    "price": 5390,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 327,
+    "name": "Sweet potato puree,Rye duck breast\r",
+    "priority": 314,
+    "type": "FOOD",
+    "menucardCategoryId": 28,
+    "price": 6190,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 328,
+    "name": "Citrus roasted cauliflower cream,baby corn,chicken steak\r",
+    "priority": 315,
+    "type": "FOOD",
+    "menucardCategoryId": 28,
+    "price": 4990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 329,
+    "name": "Peach cream à la mode\r",
+    "priority": 316,
+    "type": "FOOD",
+    "menucardCategoryId": 28,
+    "price": 2090,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 330,
+    "name": "Valentine's Day menu\r",
+    "priority": 317,
+    "type": "FOOD",
+    "menucardCategoryId": 28,
+    "price": 9990,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 331,
+    "name": "Ice cream with dressing\r",
+    "priority": 318,
+    "type": "FOOD",
+    "menucardCategoryId": 11,
+    "price": 1290,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 332,
+    "name": "Arpad Ginger 2 cl\r",
+    "priority": 319,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 1200,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 333,
+    "name": "Arpad Ginger 4 cl\r",
+    "priority": 320,
+    "type": "FOOD",
+    "menucardCategoryId": 23,
+    "price": 2400,
+    "onsiteVatId": 4,
+    "deliveryVatId": 4
+  },
+  {
+    "id": 334,
+    "name": "Chilli oil\r",
+    "priority": 321,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 290,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  },
+  {
+    "id": 335,
+    "name": "Pasta, olives\r",
+    "priority": 322,
+    "type": "FOOD",
+    "menucardCategoryId": 26,
+    "price": 1490,
+    "onsiteVatId": 1,
+    "deliveryVatId": 1
+  }
+]

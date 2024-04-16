@@ -1,0 +1,32 @@
+
+services:
+  competitor_db:
+    image: mysql:8
+    restart: always
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    environment:
+       - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./data/competitor-mysql:/var/lib/mysql
+      - "./config/competitor_mysql/competitors.sql:/docker-entrypoint-initdb.d/1.sql"
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.competitor-db.rule: HostRegexp(`{_:db\..*}`)
+      traefik.http.services.competitor-db.loadbalancer.server.port: 3306
+    ports:
+      - '3306:3306'
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - competitor_db
+    environment:
+      PMA_HOST: 'competitor_db'
+      PMA_PORT: 3306
+    labels:
+      traefik.enable: 'true'
+      traefik.http.routers.pma.rule: HostRegexp(`{_:pma\..*}`)
+      traefik.http.services.pma.loadbalancer.server.port: 80
+      traefik.http.routers.pma.tls: true
+      traefik.http.routers.pma.entrypoints: websecure
+    ports:
+      - '80:80'
