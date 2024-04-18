@@ -1,4 +1,4 @@
-import { MenucardCategory } from '@prisma/client';
+import { MenucardCategory, MenucardItem } from '@prisma/client';
 import { db } from '../src/utils/db';
 
 type Table = {
@@ -9,6 +9,14 @@ type Table = {
     width: number;
     height: number;
 };
+
+// type MenucardItem = {
+//     id: number;
+//     name: string;
+//     type: "FOOD" | "DRINK";
+//     menucardCategoryId: number;
+//     price: number;
+// };
 
 const seedTables = async () => {
     const data: Table[] = require('./seedData/tables.json');
@@ -48,26 +56,22 @@ const seedMenucardItems = async () => {
     const menucarditemsEn
         = fs.readFileSync(path.join(__dirname, './seedData/menucarditems-en.txt')).toString().split('\n');
     // read seedData/menucarditems.json and insert data into the 'menucardItem' table
-    const data3 = require('./seedData/menucardItems.json');
-    const menucardItems = data3.map((row: any, index: number) => {
-        const { id, menuCardCategoryId, price, vatKey1Id, vatKey1Id2, isFood } = row
-        return {
-            id: Number(id),
-            name: menucarditemsEn[index],
-            priority: Number(index + 1),
-            type: Number(isFood) === 1 ? "FOOD" : "DRINK",
-            menucardCategoryId: Number(menuCardCategoryId),
-            price: Number(price),
-            onsiteVatId: Number(vatKey1Id),
-            deliveryVatId: Number(vatKey1Id2) || Number(vatKey1Id),
-        }
-    });
+    const menucardItemsFromJson = require('./seedData/menucardItems.json');
+    const menucardItems: MenucardItem[] = menucardItemsFromJson.map((row: any, index: number) => {
+        const { id, name, menuCardCategoryId, price, isFood } = row
+           return {
+                id: Number(id),
+                name: menucarditemsEn[index],
+                type: Number(isFood) === 1 ? "FOOD" : Number(menuCardCategoryId)===21 ? "OTHER" : "DRINK",
+                menucardCategoryId: Number(menuCardCategoryId),
+                price: Number(price),
+            };
+        });
+    
 
-    fs.writeFileSync(path.join(__dirname, './seedData/newMenucardItems.json'), JSON.stringify(menucardItems, null, 2));
-
-    const tempMenucardItems = menucardItems.slice(0, 310);
-
-    return await db.menucardItem.createMany({
+    const menucardItemsHu = menucardItems.map(item => item.name).join('\n');
+    fs.writeFileSync(path.join(__dirname, './seedData/menucarditems-hu.txt'), menucardItemsHu);
+    await db.menucardItem.createMany({
         data: menucardItems,
     });
 }

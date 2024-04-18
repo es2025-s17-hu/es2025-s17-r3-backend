@@ -47,12 +47,9 @@ model MenucardCategory {
 model MenucardItem {
   id                 Int              @id @default(autoincrement())
   name               String
-  priority           Float            @default(-1.0)
   type               String           @default("FOOD")
   menucardCategoryId Int
   price              Float
-  onsiteVatId        Int
-  deliveryVatId      Int
   createdAt          DateTime         @default(now())
   updatedAt          DateTime         @updatedAt
   deletedAt          DateTime?
@@ -90,7 +87,7 @@ model User {
   firstName String
   lastName  String
   email     String   @unique
-  pin       String
+  password  String
   role      String   @default("WAITER")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

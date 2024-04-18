@@ -1,0 +1,322 @@
+Bruschetta al pomodoro
+Buffala caprese
+Carpaccio with arugula, olives, parmesan
+Antipasti meat Pera D'oro
+Antipasti veggie grill vegetables, cheese
+Black mussels in white wine butter sauce
+Aranchini rice balls stuffed with spinach, ham, parmesan 
+Tomato soup with grilled goat cheese
+Meat soup with meat tortellini
+Parmesan salad
+Shrimp salad
+Tuna salad
+Beef strips with mixed salad, taleggio cheese dressing
+Mixed salad
+Panzanella
+Mushrooms stuffed with ricotta
+Parmigiani Di Melanzane with fried aubergines
+Bolognese tagliatelle
+Penne Arrabiata
+Carbonara
+Aglio e olio
+Tagliatelle salmon, spinach
+Gnocchi with 4 cheese sauce
+Chicken penne with pesto
+Risotto with Parmesan
+Tomato risotto with cocktail shrimp
+Forest mushroom risotto
+Risotto with seafood
+Rosé duck breast with spicy cherry casserole
+Chicken breast with Parmesan sauce
+Chicken breast steak with rosemary butter sauce
+Roast lamb shank in rosemary spice crust
+Pork tenderloin with thyme wild mushrooms
+Beef steak with grilled mushrooms in red butter sauce
+Grilled branzino with grilled vegetables
+Chilli garlic prawn pizza with bread
+Grilled octopus with Mediterranean grilled vegetables
+Tuscan salmon steak grilled with polenta
+Calamari fritti with fresh mixed salad
+Saltimbocca
+Ossobuco
+Roasted steamed loin steak with mashed potatoes
+Salsa di lecsó
+Chicken breast steak with mascarpone and spinach gnocchi
+French fries
+Sweet potato
+Jasmine rice
+Grilled polenta
+Grilled vegetables
+Tiramisu classic
+Panna Cotta with mango
+Cake Barozzi
+Margarita pizza
+Caprese pizza
+Prosciutto pizza
+Prosciutto e Fungi pizza
+Quattro Formaggi pizza
+Capricciosa pizza
+Tonno e cipolla pizza
+Pizza di Napoli 
+Bolognese pizza
+Gambaretti e arugula pizza
+Frutti di Mare pizza
+Pizza al salami 
+Pizza Pera D'oro
+Quattro Stagioni pizza
+Ortolani pizza
+Gargano pizza
+Peroni pitcher
+Peroni glass
+Pilsner jug
+Aperol spritz
+San Pellegrino 0,25
+San Pellegrino 0,75
+San pellegrino 0.25
+Szentkirályi free 0.33
+Szentkirályi acid 0.33
+Free from St. Cyrillic 0.75
+St. Cyrillic acid 0.75
+Pilsner glass
+Peroni Capri
+Kronenbourg blanc
+Peroni 0,0
+Coca cola
+Cola zero
+Tonic
+Canada dry
+Oranges Schweppes 
+Orange juice
+Apple juice
+Autumn juice
+Pear juice
+Limo cassoulet 0.3
+Limo classic 0.5
+Limo Strawberry 0.3
+Limo Strawberry 0.5
+Limo elderflower 0.3
+Limo curling 0.5
+Limo passion fruit 0.3
+Limo passion fruit 0.5
+Limo blackcurrant 0.3
+Limo blackcurrant 0.5
+Iced lemon tea 0.3
+Iced lemon tea 0.5
+Strawberry syrup 0.3
+Strawberry syrup 0.3
+Strawberry syrup 0.5
+Blackcurrant syrup 0.3
+Blackcurrant syrup 0.5
+Elderberry syrup 0.3
+Elderberry syrup 0.5
+Syrup passion Fruit 0,3
+Syrup passion fruit 0.5
+Ristretto
+Espresso 
+Espresso macchiato 
+Cappuccino 
+Cafe latte
+Latte macchiato 
+Melange
+Iced coffee
+Irish coffee
+Vegetable milk
+Whipped cream
+Manuel tea
+Hot chocolate
+Honey
+Martini bianco 8cl
+Martini rosso 8cl
+Aperol 8cl
+Campari 8cl
+Martini extra dry 8cl
+Chivas regal 2cl
+Chivas regal 4cl
+Jameson 2cl
+Jameson 4cl
+Sierra silver 2cl
+Sierra silver 4cl
+Sierra gold 2cl
+Sierra gold 4cl
+Bacardi 2c
+Bacardi 4cl
+Beefaeter 2cl
+Beefaeter 4cl
+Grappa fior di vite 2cl
+Grappa fior di vite 4cl
+Finlandia 2cl
+Finlandia 4cl
+Grey goose 2cl
+Grey goose 4cl
+Unicum 2cl
+Unicum 4cl
+Unicum plum 2cl
+Unicum plum 4cl
+Jagermaister 2cl
+Jagermaister 4cl
+Limonchello 2cl
+Limoncello 4cl
+Sambucca 2cl
+Sambucca 4cl
+D'sorrento Amaretto 2cl
+D'sorrento Amaretto 4cl
+Árpád plum brandy 2cl
+Árpád plum brandy 4 cl
+Árpád pear brandy 2 cl
+Árpád pear brandy 4 cl
+Árpád premium apricot 2cl
+Árpád premium apricot 4cl
+Pizza box
+Takeaway box 
+Delivery charge 1 (290)
+Delivery charge 2 (490)
+Delivery charge 399
+Delivery charge 499
+Delivery charge 599
+Delivery charge 699
+Delivery charge 799
+Delivery charge 899
+Delivery charge 999
+Delivery charge 1099
+Delivery charge 1199
+Delivery charge 1299
+Delivery charge 1399
+Árpád premium gypsy 2cl
+Árpád premium gypsy cherry 4cl
+L'americano
+Fiero&tonic
+Negroni
+Puccini
+Bellini
+Hugo
+Garibaldi
+Gin and It
+VodkaMartini
+Irsai Oliver dl
+Irsai Olivér bottle
+Olaszrizling dl
+Olaszrizling bottle
+Vignetti Zanatta Orion
+Villa Carume Grillo DOC
+Corte Adami Soave DOC
+Le Manzane Pinot Grigio DOC
+Bodri Malbec dl
+Bodri Malbec bottle
+Concilio marzemino dl
+Concilio marzemino bottle
+San Donaci "Anticiai" dl
+San Donaci "Anticiai"
+Villa Carume Nero D'avola DOC
+Zelna "Bárka" red
+Tenute Maiano Chianti
+Vignetti Zanatta Cannonau
+Carte Adam Valpolicella DOC
+San Donaci "primius" Primitivo
+Pico Maccario "Lavignone" Barbera di Asti
+Carte Adami Amarone DOC
+Bock Rose dl
+Bock Rose dl
+Assuli "Fiordispina" Rose
+Fossomerlo Grand Cuveé dl
+Fossomerlo Grand Cuveé bottle 
+La Manzane Prosecco Rosé 
+Baileys 2cl
+Baileys 4cl
+Takeaway glass
+Extra topping 1
+Extra topping 2
+Extra shrimp
+************************
+Pera d'oro salad
+Apple frog 3/2
+Soda
+Pizza bread
+Applesauce 2/3
+Applesauce 2/1
+Apple Frosh 1/2
+Long coffee,Café Lungo
+Assuli "Fiordispina" Rose dl
+Vignetti Zanatta Orion dl
+Forest mushroom cream soup with gnocchi
+Gnocchi, wild mushrooms, prosciutto, mascarpone
+Gluten-free spaghetti
+Creamy spinach risotto with toasted goat cheese
+Chicken breast, eggplant, tomato sauce
+Roasted potatoes with rosemary
+Mashed potatoes with Parmesan
+Salsiccia pizza
+Salsiccia e friarielli pizza
+Salsiccia e pepperoni pizza
+Hennessy V.S. 4 cl
+Hennessy V.S. 2cl
+Grilled pork tenderloin
+Takeaway
+Tomato sauce
+Ketchup
+Gluten-free gnocchi
+Pizza sauce
+Deposit fee approx.
+Pilsner 0,33
+Syrup sugar free 3 dl
+Pancetta pizza
+Extra mozzarella
+Extra prosciutto
+Extra mushrooms
+Extra gorgonzola
+Extra artichoke
+Extra olives
+Extra tuna
+Extra red onion
+Extra Anchovy
+Extra arugula
+Extra Italian salami
+Extra pear
+Extra grilled vegetables
+Extra sheep's cheese
+Extra pepperoni
+Extra pancetta
+Extra seafood
+Extra mussels
+Extra friarielli
+Extra chicken breast cubes
+Mixtea
+Lemonade cm with syrup 5dl
+Dips
+Dips
+Syrup sugar free 5 dl
+Limo cm with syrup 3 dl
+Minestrone soup
+Cabbage gnocchi with duck legs
+Profiterol
+Pizza alla zucca
+Ciabatta
+Milk
+Calamari without salami
+San Donachi primus primitivo dl
+Parmesan
+Fortified wine
+Cabbage gnocchi, roast duck leg, guanciale
+Gnocchi with pumpkin Chicken
+Gnocchi with pumpkin Duck breast
+Minestrone soup
+Bowl for two
+Package
+Carpaccio
+Primitivo glass
+Primitivo dl
+Voucher
+Business menu 2 courses
+Business menu 3 courses
+Extra pear
+Cream of celery soup
+Fresh salad, pomegranate, goat cheese
+Risotto with capicum cream,grilled branzino
+Sweet potato puree,Rye duck breast
+Citrus roasted cauliflower cream,baby corn,chicken steak
+Peach cream à la mode
+Valentine's Day menu
+Ice cream with dressing
+Arpad Ginger 2 cl
+Arpad Ginger 4 cl
+Chilli oil
+Pasta, olives
