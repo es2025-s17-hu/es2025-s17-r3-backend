@@ -1,8 +1,8 @@
 import express from 'express';
 import restaurantRouter from './restaurant/restaurant.router';
 import tableRouter from './table/table.router';
-import menucardCategoryRouter from './menucardCategory/menucardCategory.router';
-import menucardItemRouter from './menucardItem/menucardItem.router';
+import menuCategoryRouter from './menuCategory/menuCategory.router';
+import menuItemRouter from './menuItem/menuItem.router';
 
 const app = express();
 const port = 5000; // Port where the app will listen
@@ -26,13 +26,13 @@ app.get('/tables', tableRouter);
 app.post('/tables', tableRouter);
 app.put('/tables/:id', tableRouter);
 
-app.get('/menucardCategories', menucardCategoryRouter);
-app.get('/menucardCategories/:id', menucardCategoryRouter);
+app.get('/menuCategories', menuCategoryRouter);
+app.get('/menuCategories/:id', menuCategoryRouter);
 
-app.get('/menucardItems', menucardItemRouter);
-app.get('/menucardItems/menucardCategory/:menucardCategoryId', menucardItemRouter);
-app.post('/menucardItems', menucardItemRouter);
-app.put('/menucardItems/:id', menucardItemRouter);
+app.get('/menuItems', menuItemRouter);
+app.get('/menuItems/menuCategory/:menuCategoryId', menuItemRouter);
+app.post('/menuItems', menuItemRouter);
+app.put('/menuItems/:id', menuItemRouter);
 
 
 const PORT = process.env.PORT || port;

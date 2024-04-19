@@ -1,32 +1,18 @@
-import { MenucardCategory, MenucardItem } from '@prisma/client';
+import { MenuCategory, MenuItem, Table } from '@prisma/client';
 import { db } from '../src/utils/db';
-
-type Table = {
-    name: string;
-    code: string;
-    x: number;
-    y: number;
-    width: number;
-    height: number;
-};
-
-// type MenucardItem = {
-//     id: number;
-//     name: string;
-//     type: "FOOD" | "DRINK";
-//     menucardCategoryId: number;
-//     price: number;
-// };
+import fs from 'fs';
+import path from 'path';
 
 const seedTables = async () => {
-    const data: Table[] = require('./seedData/tables.json');
-    const tables = data.map(row => (
+    type TableJson = { code: string, x: number, y: number, width: number, height: number };
+    const tablesFromJson = require('./seedData/tables.json');
+    const tables = tablesFromJson.map((table: TableJson) => (
         {
-            name: row.code,
-            x: Number(row.x),
-            y: Number(row.y),
-            width: Number(row.width),
-            height: Number(row.height),
+            name: table.code,
+            x: Number(table.x),
+            y: Number(table.y),
+            width: Number(table.width),
+            height: Number(table.height),
         }
     ));
     return await db.table.createMany({
@@ -35,67 +21,66 @@ const seedTables = async () => {
 
 }
 
-const seedMenucardCategories = async () => {
-    const menucardCategoriesFromJson: MenucardCategory[] = require('./seedData/menucardCategories.json');
-    const menucardCategories = menucardCategoriesFromJson.map((row, index) => (
+const seedMenuCategories = async () => {
+    type MenuCategoryJson = { id: number, name: string };
+    const menuCategoriesFromJson: MenuCategoryJson[]  = require('./seedData/menuCategories.json');
+    const menuCategories = menuCategoriesFromJson.map((menuCategory, index) => (
         {
-            id: Number(row.id),
-            name: row.name,
-            priority: index === 1 ? 99 : Number(row.id),
+            id: Number(menuCategory.id),
+            name: menuCategory.name,
+            priority: index === 1 ? 99 : Number(menuCategory.id),
         }
     ));
-    return await db.menucardCategory.createMany({
-        data: menucardCategories,
+    return await db.menuCategory.createMany({
+        data: menuCategories,
 
     });
 }
 
-const seedMenucardItems = async () => {
-    const fs = require('fs');
-    const path = require('path');
-    const menucarditemsEn
-        = fs.readFileSync(path.join(__dirname, './seedData/menucarditems-en.txt')).toString().split('\n');
-    // read seedData/menucarditems.json and insert data into the 'menucardItem' table
-    const menucardItemsFromJson = require('./seedData/menucardItems.json');
-    const menucardItems: MenucardItem[] = menucardItemsFromJson.map((row: any, index: number) => {
-        const { id, name, menuCardCategoryId, price, isFood } = row
+const seedMenuItems = async () => {
+    type MenuItemJson = { id: number, name: string, menuCardCategoryId: number, price: number, isFood: number };
+    const menuitemsEn: string[]
+        = fs.readFileSync(path.join(__dirname, './seedData/menuitems-en.txt')).toString().split('\n');
+    const menuItemsFromJson: MenuItemJson[] = require('./seedData/menuItems.json');
+    const menuItems = menuItemsFromJson.map((menuItem, index) => {
+        const { id, menuCardCategoryId, price, isFood } = menuItem
            return {
                 id: Number(id),
-                name: menucarditemsEn[index],
+                name: menuitemsEn[index],
                 type: Number(isFood) === 1 ? "FOOD" : Number(menuCardCategoryId)===21 ? "OTHER" : "DRINK",
-                menucardCategoryId: Number(menuCardCategoryId),
+                menuCategoryId: Number(menuCardCategoryId),
                 price: Number(price),
             };
         });
     
-
-    const menucardItemsHu = menucardItems.map(item => item.name).join('\n');
-    fs.writeFileSync(path.join(__dirname, './seedData/menucarditems-hu.txt'), menucardItemsHu);
-    await db.menucardItem.createMany({
-        data: menucardItems,
+    const menuItemsHu = menuItems.map(menuItem => menuItem.name).join('\n');
+    fs.writeFileSync(path.join(__dirname, './seedData/menuitems-hu.txt'), menuItemsHu);
+    
+    await db.menuItem.createMany({
+        data: menuItems,
     });
 }
 
 const seedRestaurant = async () => {
-    const fs = require('fs');
-    const path = require('path');
     const sql
         = fs.readFileSync(path.join(__dirname, './seedData/insertRestaurant.sql')).toString()
     const sql2 = `INSERT INTO Restaurant ( name, postCode, city, address, countryCode, vatId, createdAt, updatedAt, deletedAt ) VALUES ( 'Vegazzi', '1111', 'Budapest', 'Váci út 12.', 'HU', '12345666-2-23', NOW(), NOW(), NULL );`
     return await db.$queryRawUnsafe(sql)
 }
 
-const seedAll = async () => {
-    await seedTables();
-    await seedMenucardCategories();
-    await seedMenucardItems();
-    await seedRestaurant();
+const seedAllData = async (): Promise<void> => {
+    await Promise.all([
+        seedTables(),
+        seedMenuCategories(),
+        seedMenuItems(),
+        seedRestaurant(),
+    ]);
 };
 
 const seed = async () => {
     try {
-        await seedAll();
-        console.log('Restaurant, Table MenucardCategory, MenucardItem seed data inserted');
+        await seedAllData();
+        console.log('Restaurant, Table,  MenuCategory, MenuItem seed data inserted');
     } catch (error) {
         console.error('Error inserting seed data: ', error);
     }

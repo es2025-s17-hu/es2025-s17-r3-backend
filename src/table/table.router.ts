@@ -6,7 +6,7 @@ import { isNotFoundError } from '../utils/db';
 const router = createRouter();
 
 router.get('/tables', async (req: Request, res: Response) => {
-    try {
+    try {  
         console.log("Fetching tables");
         const tables = await tableService.getAllTables();
         res.json(tables);
