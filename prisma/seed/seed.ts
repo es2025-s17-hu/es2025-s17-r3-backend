@@ -3,6 +3,7 @@ import { seedMenuCategories } from "./seedMenuCategories";
 import { seedRestaurant } from "./seedRestaurants";
 import { seedUsers } from "./seedUsers";
 import { seedMenuItems } from "./seedMenuItems";
+import { seedOrders } from "./seedOrders";
 
 const seedAllData = async (): Promise<void> => {
   await Promise.all([
@@ -11,6 +12,7 @@ const seedAllData = async (): Promise<void> => {
     seedMenuItems(),
     seedRestaurant(),
     seedUsers(),
+    seedOrders(),
   ]);
 };
 

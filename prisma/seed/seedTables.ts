@@ -2,6 +2,7 @@ import { db } from "../../src/utils/db";
 
 export const seedTables = async () => {
   type TableJson = {
+    id: number;
     code: string;
     x: number;
     y: number;
@@ -10,7 +11,8 @@ export const seedTables = async () => {
   };
   const tablesFromJson = require("./data/tables.json");
   const tables = tablesFromJson.map((table: TableJson) => ({
-    name: table.code,
+    id: Number(table.id),
+    name: `Table ${table.code}`,
     x: Number(table.x),
     y: Number(table.y),
     width: Number(table.width),
