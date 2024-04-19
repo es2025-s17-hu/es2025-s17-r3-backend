@@ -33,28 +33,28 @@ model Table {
   Orders    Order[]
 }
 
-model MenucardCategory {
-  id            Int            @id @default(autoincrement())
-  name          String
+model MenuCategory {
+  id        Int        @id @default(autoincrement())
+  name      String
   // priority is used to sort the categories in the frontend and store float values to allow for easy insertion of new categories
-  priority      Float          @default(-1.0)
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  deletedAt     DateTime?
-  MenucardItems MenucardItem[]
+  priority  Float      @default(-1.0)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  deletedAt DateTime?
+  MenuItems MenuItem[]
 }
 
-model MenucardItem {
-  id                 Int              @id @default(autoincrement())
-  name               String
-  type               String           @default("FOOD")
-  menucardCategoryId Int
-  price              Float
-  createdAt          DateTime         @default(now())
-  updatedAt          DateTime         @updatedAt
-  deletedAt          DateTime?
-  MenucardCategory   MenucardCategory @relation(fields: [menucardCategoryId], references: [id])
-  OrderItem          OrderItem[]
+model MenuItem {
+  id             Int          @id @default(autoincrement())
+  name           String
+  type           String       @default("FOOD")
+  menuCategoryId Int
+  price          Float
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  deletedAt      DateTime?
+  MenuCategory   MenuCategory @relation(fields: [menuCategoryId], references: [id])
+  OrderItem      OrderItem[]
 }
 
 model Order {
@@ -71,23 +71,24 @@ model Order {
 }
 
 model OrderItem {
-  id             Int          @id @default(autoincrement())
-  orderId        Int
-  menucardItemId Int
-  quantity       Int
-  priceAtOrder   Float
-  createdAt      DateTime     @default(now())
-  updatedAt      DateTime     @updatedAt
-  Order          Order        @relation(fields: [orderId], references: [id])
-  MenucardItem   MenucardItem @relation(fields: [menucardItemId], references: [id])
+  id           Int      @id @default(autoincrement())
+  orderId      Int
+  menuItemId   Int
+  quantity     Int
+  priceAtOrder Float
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  Order        Order    @relation(fields: [orderId], references: [id])
+  MenuItem     MenuItem @relation(fields: [menuItemId], references: [id])
 }
 
 model User {
   id        Int      @id @default(autoincrement())
   firstName String
   lastName  String
-  email     String   @unique
+  userName  String   @unique
   password  String
+  pin       String   @unique @default(uuid())
   role      String   @default("WAITER")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

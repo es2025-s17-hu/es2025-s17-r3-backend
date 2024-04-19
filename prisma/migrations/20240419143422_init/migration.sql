@@ -30,9 +30,10 @@ CREATE TABLE `Table` (
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `MenucardCategory` (
+CREATE TABLE `MenuCategory` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(191) NOT NULL,
+    `priority` DOUBLE NOT NULL DEFAULT -1.0,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
     `deletedAt` DATETIME(3) NULL,
@@ -41,16 +42,12 @@ CREATE TABLE `MenucardCategory` (
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `MenucardItem` (
+CREATE TABLE `MenuItem` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(191) NOT NULL,
     `type` VARCHAR(191) NOT NULL DEFAULT 'FOOD',
-    `menucardCategoryId` INTEGER NOT NULL,
+    `menuCategoryId` INTEGER NOT NULL,
     `price` DOUBLE NOT NULL,
-    `onsiteVatId` INTEGER NOT NULL,
-    `deliveryVatId` INTEGER NOT NULL,
-    `discount` DOUBLE NULL,
-    `serviceFee` DOUBLE NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
     `deletedAt` DATETIME(3) NULL,
@@ -75,7 +72,7 @@ CREATE TABLE `Order` (
 CREATE TABLE `OrderItem` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `orderId` INTEGER NOT NULL,
-    `menucardItemId` INTEGER NOT NULL,
+    `menuItemId` INTEGER NOT NULL,
     `quantity` INTEGER NOT NULL,
     `priceAtOrder` DOUBLE NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
@@ -89,18 +86,20 @@ CREATE TABLE `User` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `firstName` VARCHAR(191) NOT NULL,
     `lastName` VARCHAR(191) NOT NULL,
-    `email` VARCHAR(191) NOT NULL,
+    `userName` VARCHAR(191) NOT NULL,
+    `password` VARCHAR(191) NOT NULL,
     `pin` VARCHAR(191) NOT NULL,
     `role` VARCHAR(191) NOT NULL DEFAULT 'WAITER',
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
 
-    UNIQUE INDEX `User_email_key`(`email`),
+    UNIQUE INDEX `User_userName_key`(`userName`),
+    UNIQUE INDEX `User_pin_key`(`pin`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- AddForeignKey
-ALTER TABLE `MenucardItem` ADD CONSTRAINT `MenucardItem_menucardCategoryId_fkey` FOREIGN KEY (`menucardCategoryId`) REFERENCES `MenucardCategory`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE `MenuItem` ADD CONSTRAINT `MenuItem_menuCategoryId_fkey` FOREIGN KEY (`menuCategoryId`) REFERENCES `MenuCategory`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE `Order` ADD CONSTRAINT `Order_tableId_fkey` FOREIGN KEY (`tableId`) REFERENCES `Table`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
@@ -112,4 +111,4 @@ ALTER TABLE `Order` ADD CONSTRAINT `Order_userId_fkey` FOREIGN KEY (`userId`) RE
 ALTER TABLE `OrderItem` ADD CONSTRAINT `OrderItem_orderId_fkey` FOREIGN KEY (`orderId`) REFERENCES `Order`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE `OrderItem` ADD CONSTRAINT `OrderItem_menucardItemId_fkey` FOREIGN KEY (`menucardItemId`) REFERENCES `MenucardItem`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE `OrderItem` ADD CONSTRAINT `OrderItem_menuItemId_fkey` FOREIGN KEY (`menuItemId`) REFERENCES `MenuItem`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

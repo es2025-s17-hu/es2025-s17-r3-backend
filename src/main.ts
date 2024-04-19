@@ -27,6 +27,7 @@ app.post('/tables', tableRouter);
 app.put('/tables/:id', tableRouter);
 
 app.get('/menuCategories', menuCategoryRouter);
+app.post('/menuCategories', menuCategoryRouter);
 app.get('/menuCategories/:id', menuCategoryRouter);
 
 app.get('/menuItems', menuItemRouter);

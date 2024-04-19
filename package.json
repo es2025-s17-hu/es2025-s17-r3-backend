@@ -8,7 +8,7 @@
     "start-build": "node dist/main.js",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:reset": "prisma migrate reset --force && ts-node prisma/seed.ts"
+    "db:reset": "prisma migrate reset --force && ts-node prisma/seed/seed.ts"
   },
   "keywords": [],
   "author": "",
