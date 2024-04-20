@@ -4,7 +4,7 @@
 import { menuItemService } from "./menuItem.service";
 
 import { createRouter, Request, Response } from "../utils/router";
-import { isNotFoundError } from "../utils/db";
+import { isForeignKeyConstraintError, isNotFoundError } from "../utils/db";
 
 const router = createRouter();
 
@@ -40,10 +40,35 @@ router.get(
 );
 
 router.post("/menuItems", async (req: Request, res: Response) => {
+  const { menuCategoryId, name, price, type } = req.body;
+
+  if (!(menuCategoryId && name && price && type)) {
+    res.status(400).send("One of the mandatory fields is missing");
+    return;
+  }
+
+  enum orderItemType {
+    food = "FOOD",
+    drink = "DRINK",
+    other = "OTHER",
+  }
+
+  if (!Object.values(orderItemType).includes(type)) {
+    res.status(400).send("Invalid type value");
+    return;
+  }
+
   try {
     const menuItem = await menuItemService.createMenuItem(req.body);
     res.json(menuItem);
   } catch (error) {
+    if (isForeignKeyConstraintError(error)) {
+      res
+        .status(400)
+        .send("Menucard category with the given ID does not exist.");
+      return;
+    }
+
     console.error("Error creating menuItem: ", error);
     res.status(500).send("Error creating menuItem");
   }
@@ -61,7 +86,7 @@ router.put("/menuItems/:id", async (req: Request, res: Response) => {
     res.json(updatedMenucardItem);
   } catch (error) {
     if (isNotFoundError(error)) {
-      res.status(404).send("MenucardItem not found");
+      res.status(404).send("Menu item not found");
       return;
     }
     console.error("Error updating menuItem: ", error);
@@ -74,14 +99,14 @@ router.delete("/menuItems/:id", async (req: Request, res: Response) => {
 
   try {
     await menuItemService.deleteMenuItem(parseInt(id, 10));
-    res.status(204).send();
+    res.status(200).send("Menu item deleted");
   } catch (error) {
     if (isNotFoundError(error)) {
-      res.status(404).send("MenucardItem not found");
+      res.status(404).send("Menu item not found");
       return;
     }
     console.error("Error deleting menuItem: ", error);
-    res.status(500).send("Error deleting menuItem");
+    res.status(500).send("Error deleting menu item");
   }
 });
 

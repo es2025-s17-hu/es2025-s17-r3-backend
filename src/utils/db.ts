@@ -29,3 +29,7 @@ export const db = new PrismaClient({
 export const isNotFoundError = (error: any) =>
   error instanceof Prisma.PrismaClientKnownRequestError &&
   error.code === "P2025";
+
+export const isForeignKeyConstraintError = (error: any) =>
+  error instanceof Prisma.PrismaClientKnownRequestError &&
+  error.code === "P2003";

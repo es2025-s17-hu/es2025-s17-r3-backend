@@ -9,7 +9,30 @@ CREATE TABLE `Restaurant` (
     `vatId` VARCHAR(191) NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
-    `deletedAt` DATETIME(3) NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `MenuCategory` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(191) NOT NULL,
+    `priority` DOUBLE NOT NULL DEFAULT -1.0,
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `MenuItem` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(191) NOT NULL,
+    `type` VARCHAR(191) NOT NULL DEFAULT 'FOOD',
+    `menuCategoryId` INTEGER NOT NULL,
+    `price` DOUBLE NOT NULL,
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -24,33 +47,6 @@ CREATE TABLE `Table` (
     `height` INTEGER NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
-    `deletedAt` DATETIME(3) NULL,
-
-    PRIMARY KEY (`id`)
-) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
--- CreateTable
-CREATE TABLE `MenuCategory` (
-    `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `name` VARCHAR(191) NOT NULL,
-    `priority` DOUBLE NOT NULL DEFAULT -1.0,
-    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
-    `updatedAt` DATETIME(3) NOT NULL,
-    `deletedAt` DATETIME(3) NULL,
-
-    PRIMARY KEY (`id`)
-) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
--- CreateTable
-CREATE TABLE `MenuItem` (
-    `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `name` VARCHAR(191) NOT NULL,
-    `type` VARCHAR(191) NOT NULL DEFAULT 'FOOD',
-    `menuCategoryId` INTEGER NOT NULL,
-    `price` DOUBLE NOT NULL,
-    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
-    `updatedAt` DATETIME(3) NOT NULL,
-    `deletedAt` DATETIME(3) NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -102,9 +98,6 @@ ALTER TABLE `MenuItem` ADD CONSTRAINT `MenuItem_menuCategoryId_fkey` FOREIGN KEY
 
 -- AddForeignKey
 ALTER TABLE `Order` ADD CONSTRAINT `Order_tableId_fkey` FOREIGN KEY (`tableId`) REFERENCES `Table`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
-
--- AddForeignKey
-ALTER TABLE `Order` ADD CONSTRAINT `Order_userId_fkey` FOREIGN KEY (`userId`) REFERENCES `User`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE `OrderItem` ADD CONSTRAINT `OrderItem_orderId_fkey` FOREIGN KEY (`orderId`) REFERENCES `Order`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

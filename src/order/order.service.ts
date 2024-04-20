@@ -32,6 +32,7 @@ class OrderService {
   }
 
   async createOrder(order: Order) {
+    console.log("creating order with orderItems: ", order);
     return await db.order.create({
       data: order,
     });

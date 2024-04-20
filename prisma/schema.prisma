@@ -8,29 +8,15 @@ generator client {
 }
 
 model Restaurant {
-  id          Int       @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   name        String
   postCode    String
   city        String
   address     String
   countryCode String
   vatId       String
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  deletedAt   DateTime?
-}
-
-model Table {
-  id        Int       @id @default(autoincrement())
-  name      String
-  x         Int
-  y         Int
-  width     Int
-  height    Int
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  deletedAt DateTime?
-  Orders    Order[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
 
 model MenuCategory {
@@ -40,7 +26,6 @@ model MenuCategory {
   priority  Float      @default(-1.0)
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
-  deletedAt DateTime?
   MenuItems MenuItem[]
 }
 
@@ -52,9 +37,20 @@ model MenuItem {
   price          Float
   createdAt      DateTime     @default(now())
   updatedAt      DateTime     @updatedAt
-  deletedAt      DateTime?
   MenuCategory   MenuCategory @relation(fields: [menuCategoryId], references: [id])
   OrderItem      OrderItem[]
+}
+
+model Table {
+  id        Int      @id @default(autoincrement())
+  name      String
+  x         Int
+  y         Int
+  width     Int
+  height    Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Orders    Order[]
 }
 
 model Order {
@@ -65,7 +61,6 @@ model Order {
   createdAt  DateTime    @default(now())
   updatedAt  DateTime    @updatedAt
   Table      Table       @relation(fields: [tableId], references: [id])
-  User       User        @relation(fields: [userId], references: [id])
   OrderItems OrderItem[]
 }
 
@@ -91,5 +86,4 @@ model User {
   role      String   @default("WAITER")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  Orders    Order[]
 }
