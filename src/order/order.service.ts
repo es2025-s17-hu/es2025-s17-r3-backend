@@ -6,7 +6,18 @@ import { db } from "../utils/db";
 
 class OrderService {
   async getAllMenuCategories() {
-    return await db.order.findMany({});
+    return await db.order.findMany({
+      orderBy: {
+        closedAt: "desc",
+      },
+      include: {
+        OrderItems: {
+          include: {
+            MenuItem: true,
+          },
+        },
+      },
+    });
   }
 
   async getOrderWithOrderItems(id: number) {
@@ -20,10 +31,11 @@ class OrderService {
     });
   }
 
-  async getOrderById(id: number) {
-    return await db.order.findUnique({
+  async getOrderByTableId(tableId: number) {
+    return await db.order.findFirst({
       where: {
-        id,
+        tableId,
+        closedAt: null,
       },
       include: {
         OrderItems: true,
@@ -33,13 +45,24 @@ class OrderService {
 
   async createOrder(order: Order) {
     console.log("creating order with orderItems: ", order);
+    const openOrders = await db.order.findFirst({
+      where: {
+        closedAt: null,
+        tableId: order.tableId,
+      },
+    });
+    if (openOrders) {
+      throw new Error("Table already has an open order");
+    }
     return await db.order.create({
       data: order,
     });
   }
-  async updateOrder(id: number, order: Order) {
+  async closeOrder(order: Order) {
     return await db.order.update({
-      where: { id },
+      where: {
+        id: order.id,
+      },
       data: order,
     });
   }

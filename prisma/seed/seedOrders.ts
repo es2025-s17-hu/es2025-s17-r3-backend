@@ -14,7 +14,6 @@ export const seedOrders = async () => {
   const orders = ordersFromJson.map((order, index) => ({
     id: Number(order.id),
     tableId: Number(order.tableId),
-    userId: 2,
     createdAt: new Date(order.createdAt).toISOString(),
     closedAt:
       order.isOpen === "1" ? null : new Date(order.updatedAt).toISOString(),
