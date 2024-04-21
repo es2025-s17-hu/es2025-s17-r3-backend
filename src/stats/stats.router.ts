@@ -3,7 +3,7 @@ import { db } from '../utils/db';
 
 const router = createRouter();
 
-router.get("/traffic", async (req: Request, res: Response) => {
+router.get("/stats", async (req: Request, res: Response) => {
 	/* Schema:
 	{
 		"totalRevenue": 0,
@@ -22,7 +22,7 @@ router.get("/traffic", async (req: Request, res: Response) => {
 				MenuItem: true
 			}
 		});
-		const traffic = {
+		const stats = {
 			totalRevenue: 0,
 			countOfOrderItem: []
 		} as {
@@ -34,22 +34,22 @@ router.get("/traffic", async (req: Request, res: Response) => {
 			}[]
 		}
 		allOrderItems.forEach(orderItem => {
-			traffic.totalRevenue += Number(orderItem.MenuItem.price)
-			const menuItem = traffic.countOfOrderItem.find(item => item.menuItemId === orderItem.menuItemId);
+			stats.totalRevenue += Number(orderItem.MenuItem.price)
+			const menuItem = stats.countOfOrderItem.find(item => item.menuItemId === orderItem.menuItemId);
 			if (menuItem) {
 				menuItem.count += orderItem.quantity;
 			} else {
-				traffic.countOfOrderItem.push({
+				stats.countOfOrderItem.push({
 					menuItemId: orderItem.menuItemId,
 					menuItemName: orderItem.MenuItem.name,
 					count: orderItem.quantity
 				});
 			}
 		});
-		res.json(traffic);
+		res.json(stats);
 	} catch (error) {
-		console.error("Error fetching traffic: ", error);
-		res.status(500).send("Error fetching traffic");
+		console.error("Error fetching stats: ", error);
+		res.status(500).send("Error fetching stats");
 	}
 })
 

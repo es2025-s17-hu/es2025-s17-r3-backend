@@ -4,7 +4,7 @@ import menuCategoryRouter from "./menuCategory/menuCategory.router";
 import menuItemRouter from "./menuItem/menuItem.router";
 import orderRouter from "./order/order.router";
 import orderItemRouter from "./orderItem/orderItem.router";
-import trafficRouter from "./traffic/traffic.router";
+import statsRouter from "./stats/stats.router";
 import loginRouter from "./login/login.router";
 import { createRouter } from "./utils/router";
 import { db } from "./utils/db";
@@ -105,7 +105,7 @@ apiRoutes.use(menuCategoryRouter)
 apiRoutes.use(menuItemRouter)
 apiRoutes.use(orderRouter)
 apiRoutes.use(orderItemRouter)
-apiRoutes.use(trafficRouter)
+apiRoutes.use(statsRouter)
 
 app.use("/api/v1", apiRoutes)
 
