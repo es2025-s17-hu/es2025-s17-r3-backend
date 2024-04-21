@@ -44,6 +44,10 @@ router.post("/login/pin", async (req: Request, res: Response) => {
 router.post("/login", async (req: Request, res: Response) => {
   try {
     const { username, password } = req.body;
+	if (!username || !password) {
+	  res.status(401).send("Unauthorized");
+	  return;
+	}
     db.user
       .findFirst({
         where: {
