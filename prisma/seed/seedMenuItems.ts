@@ -14,7 +14,7 @@ export const seedMenuItems = async () => {
     .readFileSync(path.join(__dirname, "./data/menuitems-en.txt"))
     .toString()
     .split("\n");
-  const menuItemsFromJson: MenuItemJson[] = require("./data/menuItems.json");
+  const menuItemsFromJson: MenuItemJson[] = require("./seedData/menuItems.json");
   const menuItems = menuItemsFromJson.map((menuItem, index) => {
     const { id, menuCardCategoryId, price, isFood } = menuItem;
     return {

@@ -9,7 +9,7 @@ export const seedTables = async () => {
     width: number;
     height: number;
   };
-  const tablesFromJson = require("./data/tables.json");
+  const tablesFromJson = require("./seedData/tables.json");
   const tables = tablesFromJson.map((table: TableJson) => ({
     id: Number(table.id),
     name: `Table ${table.code}`,

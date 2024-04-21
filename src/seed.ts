@@ -12,7 +12,7 @@ const seedTables = async () => {
     width: number;
     height: number;
   };
-  const tablesFromJson = require("./data/tables.json");
+  const tablesFromJson = require("./seedData/tables.json");
   const tables = tablesFromJson.map((table: TableJson) => ({
     name: table.code,
     x: Number(table.x),
@@ -27,7 +27,7 @@ const seedTables = async () => {
 
 const seedMenuCategories = async () => {
   type MenuCategoryJson = { id: number; name: string };
-  const menuCategoriesFromJson: MenuCategoryJson[] = require("./data/menuCategories.json");
+  const menuCategoriesFromJson: MenuCategoryJson[] = require("./seedData/menuCategories.json");
   const menuCategories = menuCategoriesFromJson.map((menuCategory, index) => ({
     id: Number(menuCategory.id),
     name: menuCategory.name,
@@ -50,7 +50,7 @@ const seedMenuItems = async () => {
     .readFileSync(path.join(__dirname, "./data/menuitems-en.txt"))
     .toString()
     .split("\n");
-  const menuItemsFromJson: MenuItemJson[] = require("./data/menuItems.json");
+  const menuItemsFromJson: MenuItemJson[] = require("./seedData/menuItems.json");
   const menuItems = menuItemsFromJson.map((menuItem, index) => {
     const { id, menuCardCategoryId, price, isFood } = menuItem;
     return {
@@ -95,7 +95,7 @@ const seedUsers = async () => {
     pin: string;
     role: string;
   };
-  const usersFromJson = require("./data/users.json");
+  const usersFromJson = require("./seedData/users.json");
   const users: User[] = usersFromJson.map((user: UserJson) => {
     user.pin = user.pin?.length === 4 ? user.pin : randomUUID();
     console.log("User pin: ", user.pin);

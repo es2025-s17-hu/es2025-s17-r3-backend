@@ -12,7 +12,7 @@ export const seedUsers = async () => {
     pin: string;
     role: string;
   };
-  const usersFromJson = require("./data/users.json");
+  const usersFromJson = require("./seedData/users.json");
   const users: User[] = usersFromJson.map((user: UserJson) => {
     user.pin = user.pin?.length === 4 ? user.pin : randomUUID();
     return {

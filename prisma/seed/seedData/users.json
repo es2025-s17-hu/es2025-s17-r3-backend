@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "userName": "jdoe",
+        "password": "dineease1",
+        "pin": "",
+        "role": "ADMIN"
+    },
+    {
+        "id": 2,
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "userName": "jane",
+        "password": "",
+        "pin": "1234",
+        "role": "WAITER"
+    },
+    {
+        "id": 3,
+        "firstName": "Bob",
+        "lastName": "Smith",
+        "userName": "bsmith",
+        "password": "dineease3",
+        "pin": "5678",
+        "role": "MANAGER"
+    }
+]

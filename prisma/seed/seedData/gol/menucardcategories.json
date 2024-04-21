@@ -1,0 +1,245 @@
+[
+    {
+        "id": "1",
+        "name": "Starters",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:37:28",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "3"
+    },
+    {
+        "id": "2",
+        "name": "Soups",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:37:31",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "4"
+    },
+    {
+        "id": "3",
+        "name": "Salads",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:37:39",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "7"
+    },
+    {
+        "id": "4",
+        "name": "Vegetarian dishes",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:37:45",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "5"
+    },
+    {
+        "id": "5",
+        "name": "Pastas",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:38:10",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "5"
+    },
+    {
+        "id": "6",
+        "name": "Risottos",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-28 16:23:31",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "5"
+    },
+    {
+        "id": "7",
+        "name": "Meats",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:38:19",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "5"
+    },
+    {
+        "id": "8",
+        "name": "Fish dishes",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:38:21",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "5"
+    },
+    {
+        "id": "9",
+        "name": "Main courses",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:38:26",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "5"
+    },
+    {
+        "id": "10",
+        "name": "Side dishes",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:38:30",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "6"
+    },
+    {
+        "id": "11",
+        "name": "Desserts",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:38:34",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "10"
+    },
+    {
+        "id": "12",
+        "name": "Pizza",
+        "createdAt": "2023-08-24 19:06:29",
+        "updatedAt": "2023-12-27 13:38:37",
+        "displayOrder": "1",
+        "hidden": "0",
+        "ntaksubcategoryId": "5"
+    },
+    {
+        "id": "13",
+        "name": "Draft beer ",
+        "createdAt": "2023-08-25 11:12:51",
+        "updatedAt": "2023-12-27 13:38:45",
+        "displayOrder": "2",
+        "hidden": "0",
+        "ntaksubcategoryId": "29"
+    },
+    {
+        "id": "15",
+        "name": "Bottled beer ",
+        "createdAt": "2023-08-25 11:17:35",
+        "updatedAt": "2023-12-27 13:38:49",
+        "displayOrder": "3",
+        "hidden": "0",
+        "ntaksubcategoryId": "29"
+    },
+    {
+        "id": "16",
+        "name": "Mineral waters",
+        "createdAt": "2023-08-25 11:18:20",
+        "updatedAt": "2023-12-27 13:38:54",
+        "displayOrder": "4",
+        "hidden": "0",
+        "ntaksubcategoryId": "21"
+    },
+    {
+        "id": "17",
+        "name": "Soft drinks",
+        "createdAt": "2023-08-25 11:18:33",
+        "updatedAt": "2023-12-27 13:38:57",
+        "displayOrder": "5",
+        "hidden": "0",
+        "ntaksubcategoryId": "23"
+    },
+    {
+        "id": "18",
+        "name": "Fruit drinks",
+        "createdAt": "2023-08-25 11:18:42",
+        "updatedAt": "2023-12-27 13:38:59",
+        "displayOrder": "6",
+        "hidden": "0",
+        "ntaksubcategoryId": "22"
+    },
+    {
+        "id": "19",
+        "name": "Homemade lemonade,iced tea",
+        "createdAt": "2023-08-25 11:19:24",
+        "updatedAt": "2023-12-27 13:59:12",
+        "displayOrder": "7",
+        "hidden": "0",
+        "ntaksubcategoryId": "16"
+    },
+    {
+        "id": "20",
+        "name": "Homemade syrups",
+        "createdAt": "2023-08-25 11:19:37",
+        "updatedAt": "2023-12-27 13:59:23",
+        "displayOrder": "8",
+        "hidden": "0",
+        "ntaksubcategoryId": "16"
+    },
+    {
+        "id": "21",
+        "name": "Coffees,hot drinks",
+        "createdAt": "2023-08-25 11:19:57",
+        "updatedAt": "2023-12-27 13:39:18",
+        "displayOrder": "9",
+        "hidden": "0",
+        "ntaksubcategoryId": "20"
+    },
+    {
+        "id": "22",
+        "name": "Aperitifs",
+        "createdAt": "2023-08-25 11:20:18",
+        "updatedAt": "2023-12-27 13:39:31",
+        "displayOrder": "10",
+        "hidden": "0",
+        "ntaksubcategoryId": "26"
+    },
+    {
+        "id": "23",
+        "name": "Spirits ",
+        "createdAt": "2023-08-25 11:20:36",
+        "updatedAt": "2023-12-27 13:39:36",
+        "displayOrder": "11",
+        "hidden": "0",
+        "ntaksubcategoryId": "28"
+    },
+    {
+        "id": "24",
+        "name": "Cocktails",
+        "createdAt": "2023-08-25 11:20:58",
+        "updatedAt": "2023-12-27 13:39:45",
+        "displayOrder": "12",
+        "hidden": "0",
+        "ntaksubcategoryId": "26"
+    },
+    {
+        "id": "25",
+        "name": "Wines",
+        "createdAt": "2023-08-25 11:21:38",
+        "updatedAt": "2023-12-27 13:39:47",
+        "displayOrder": "13",
+        "hidden": "0",
+        "ntaksubcategoryId": "30"
+    },
+    {
+        "id": "26",
+        "name": "Others",
+        "createdAt": "2023-08-25 12:33:45",
+        "updatedAt": "2023-08-25 12:33:45",
+        "displayOrder": "14",
+        "hidden": "0",
+        "ntaksubcategoryId": "33"
+    },
+    {
+        "id": "27",
+        "name": "Offer",
+        "createdAt": "2023-10-29 11:17:48",
+        "updatedAt": "2023-10-29 11:17:48",
+        "displayOrder": "15",
+        "hidden": "0",
+        "ntaksubcategoryId": "33"
+    },
+    {
+        "id": "28",
+        "name": "Valentine's Day offer",
+        "createdAt": "2024-02-14 15:34:24",
+        "updatedAt": "2024-02-14 15:34:24",
+        "displayOrder": "16",
+        "hidden": "0",
+        "ntaksubcategoryId": "33"
+    }
+]

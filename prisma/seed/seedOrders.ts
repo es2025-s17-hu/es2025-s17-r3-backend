@@ -10,7 +10,7 @@ export const seedOrders = async () => {
     updatedAt: Date;
     isOpen: string;
   };
-  const ordersFromJson: OrderJson[] = require("./data/orders.json");
+  const ordersFromJson: OrderJson[] = require("./seedData/orders.json");
   const orders = ordersFromJson.map((order, index) => ({
     id: Number(order.id),
     tableId: Number(order.tableId),
