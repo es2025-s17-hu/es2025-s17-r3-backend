@@ -5,6 +5,7 @@ import menuItemRouter from "./menuItem/menuItem.router";
 import orderRouter from "./order/order.router";
 import orderItemRouter from "./orderItem/orderItem.router";
 import trafficRouter from "./traffic/traffic.router";
+import loginRouter from "./login/login.router";
 
 const app = express();
 const port = 5000; // Port where the app will listen
@@ -26,6 +27,7 @@ const routers = [
   orderRouter,
   orderItemRouter,
   trafficRouter,
+  loginRouter
 ];
 for (const router of routers) {
   app.use("/api/v1/", router);

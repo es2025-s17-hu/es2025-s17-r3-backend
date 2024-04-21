@@ -83,7 +83,7 @@ const seedUsers = async () => {
     id: number;
     firstName: string;
     lastName: string;
-    userName: string;
+    username: string;
     password: string;
     pin: string;
     role: string;
@@ -96,7 +96,7 @@ const seedUsers = async () => {
       id: Number(user.id),
       firstName: user.firstName,
       lastName: user.lastName,
-      userName: user.userName,
+      username: user.username,
       password: user.password,
       pin: user.pin,
       role: user.role,
