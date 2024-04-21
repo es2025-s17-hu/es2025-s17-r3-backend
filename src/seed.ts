@@ -47,7 +47,7 @@ const seedMenuItems = async () => {
     isFood: number;
   };
   const menuitemsEn: string[] = fs
-    .readFileSync(path.join(__dirname, "./data/menuitems-en.txt"))
+    .readFileSync(path.join(__dirname, "./seedData/menuitems-en.txt"))
     .toString()
     .split("\n");
   const menuItemsFromJson: MenuItemJson[] = require("./seedData/menuItems.json");
@@ -69,7 +69,7 @@ const seedMenuItems = async () => {
 
   const menuItemsHu = menuItems.map((menuItem) => menuItem.name).join("\n");
   fs.writeFileSync(
-    path.join(__dirname, "./data/menuitems-hu.txt"),
+    path.join(__dirname, "./seedData/menuitems-hu.txt"),
     menuItemsHu
   );
 
@@ -78,13 +78,6 @@ const seedMenuItems = async () => {
   });
 };
 
-const seedRestaurant = async () => {
-  const sql = fs
-    .readFileSync(path.join(__dirname, "./data/insertRestaurant.sql"))
-    .toString();
-  const sql2 = `INSERT INTO Restaurant ( name, postCode, city, address, countryCode, vatId, createdAt, updatedAt, deletedAt ) VALUES ( 'Vegazzi', '1111', 'Budapest', 'Váci út 12.', 'HU', '12345666-2-23', NOW(), NOW(), NULL );`;
-  return await db.$queryRawUnsafe(sql);
-};
 const seedUsers = async () => {
   type UserJson = {
     id: number;
@@ -119,7 +112,6 @@ const seedAllData = async (): Promise<void> => {
     seedTables(),
     seedMenuCategories(),
     seedMenuItems(),
-    seedRestaurant(),
     seedUsers(),
   ]);
 };
@@ -128,7 +120,7 @@ const seed = async () => {
   try {
     await seedAllData();
     console.log(
-      "Restaurant, Table,  MenuCategory, MenuItem, User  seed data inserted"
+      "Table,  MenuCategory, MenuItem, User  seed data inserted"
     );
   } catch (error) {
     console.error("Error inserting seed data: ", error);

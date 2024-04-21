@@ -11,7 +11,7 @@ export const seedMenuItems = async () => {
     isFood: number;
   };
   const menuitemsEn: string[] = fs
-    .readFileSync(path.join(__dirname, "./data/menuitems-en.txt"))
+    .readFileSync(path.join(__dirname, "./seedData/menuitems-en.txt"))
     .toString()
     .split("\n");
   const menuItemsFromJson: MenuItemJson[] = require("./seedData/menuItems.json");
@@ -32,7 +32,7 @@ export const seedMenuItems = async () => {
   });
   const menuItemsHu = menuItems.map((menuItem) => menuItem.name).join("\n");
   fs.writeFileSync(
-    path.join(__dirname, "./data/menuitems-hu.txt"),
+    path.join(__dirname, "./seedData/menuitems-hu.txt"),
     menuItemsHu
   );
 

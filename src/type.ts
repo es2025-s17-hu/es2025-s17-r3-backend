@@ -1,22 +1,8 @@
-export type Restaurant = {
-  id?: number;
-  name?: string;
-  postCode?: string;
-  city?: string;
-  address?: string;
-  countryCode?: string;
-  vatId?: string;
-  createdAt?: Date;
-  updatedAt?: Date;
-  deletedAt?: Date | null;
-};
-
 export type Table = {
   id: number;
   name: string;
   x: number;
   y: number;
-  restaurantId: number;
   createdAt: Date;
   updatedAt: Date;
   deletedAt: Date | null;
@@ -60,7 +46,6 @@ export type OrderItem = {
   orderId: number;
   menucardItemId: number;
   quantity: number;
-  priceAtOrder: number;
   createdAt: Date;
   updatedAt: Date;
 };

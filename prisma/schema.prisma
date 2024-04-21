@@ -7,22 +7,9 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Restaurant {
-  id          Int      @id @default(autoincrement())
-  name        String
-  postCode    String
-  city        String
-  address     String
-  countryCode String
-  vatId       String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-}
-
 model MenuCategory {
   id        Int        @id @default(autoincrement())
   name      String
-  // priority is used to sort the categories in the frontend and store float values to allow for easy insertion of new categories
   priority  Float      @default(-1.0)
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
@@ -34,7 +21,7 @@ model MenuItem {
   name           String
   type           String       @default("FOOD")
   menuCategoryId Int
-  price          Float
+  price          Decimal      @db.Decimal(10, 2)
   createdAt      DateTime     @default(now())
   updatedAt      DateTime     @updatedAt
   MenuCategory   MenuCategory @relation(fields: [menuCategoryId], references: [id])
@@ -68,7 +55,6 @@ model OrderItem {
   orderId      Int
   menuItemId   Int
   quantity     Int
-  priceAtOrder Float
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
   Order        Order    @relation(fields: [orderId], references: [id])

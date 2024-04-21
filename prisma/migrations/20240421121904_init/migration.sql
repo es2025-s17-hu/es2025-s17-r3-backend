@@ -1,19 +1,4 @@
 -- CreateTable
-CREATE TABLE `Restaurant` (
-    `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `name` VARCHAR(191) NOT NULL,
-    `postCode` VARCHAR(191) NOT NULL,
-    `city` VARCHAR(191) NOT NULL,
-    `address` VARCHAR(191) NOT NULL,
-    `countryCode` VARCHAR(191) NOT NULL,
-    `vatId` VARCHAR(191) NOT NULL,
-    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
-    `updatedAt` DATETIME(3) NOT NULL,
-
-    PRIMARY KEY (`id`)
-) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
--- CreateTable
 CREATE TABLE `MenuCategory` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(191) NOT NULL,
@@ -30,7 +15,7 @@ CREATE TABLE `MenuItem` (
     `name` VARCHAR(191) NOT NULL,
     `type` VARCHAR(191) NOT NULL DEFAULT 'FOOD',
     `menuCategoryId` INTEGER NOT NULL,
-    `price` DOUBLE NOT NULL,
+    `price` DECIMAL(10, 2) NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
 
@@ -68,7 +53,6 @@ CREATE TABLE `OrderItem` (
     `orderId` INTEGER NOT NULL,
     `menuItemId` INTEGER NOT NULL,
     `quantity` INTEGER NOT NULL,
-    `priceAtOrder` DOUBLE NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
 

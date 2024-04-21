@@ -15,7 +15,6 @@ export const seedOrderItems = async () => {
   const orderItems = orderItemsFromJson.map((orderItem, index) => ({
     orderId: Number(orderItem.orderId),
     quantity: Number(orderItem.quantity),
-    priceAtOrder: Number(orderItem.price),
     menuItemId: Number(orderItem.menuCardItemId),
     createdAt: new Date(orderItem.createdAt).toISOString(),
     updatedAt: new Date(orderItem.createdAt).toISOString(),
