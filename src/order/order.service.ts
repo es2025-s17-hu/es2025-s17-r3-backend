@@ -2,7 +2,7 @@
 // use the MenuCardCategory model from /prisma/schema.prisma
 
 import { Order } from "@prisma/client";
-import { db } from "../utils/db";
+import { db, isForeignKeyConstraintError } from "../utils/db";
 
 class OrderService {
   async getAllMenuCategories() {
@@ -38,7 +38,11 @@ class OrderService {
         closedAt: null,
       },
       include: {
-        OrderItems: true,
+        OrderItems: {
+          include: {
+            MenuItem: true,
+          },
+        }
       },
     });
   }
@@ -54,9 +58,16 @@ class OrderService {
     if (openOrders) {
       throw new Error("Table already has an open order");
     }
-    return await db.order.create({
-      data: order,
-    });
+    try {
+     return await db.order.create({
+       data: order,
+      });
+    } catch (error) {
+      if (isForeignKeyConstraintError(error)) {
+        throw new Error("Table not found");
+      }
+      throw error;
+    }
   }
   async closeOrder(order: Order) {
     return await db.order.update({

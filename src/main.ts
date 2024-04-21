@@ -1,17 +1,16 @@
 import express from "express";
-import restaurantRouter from "./restaurant/restaurant.router";
 import tableRouter from "./table/table.router";
 import menuCategoryRouter from "./menuCategory/menuCategory.router";
 import menuItemRouter from "./menuItem/menuItem.router";
 import orderRouter from "./order/order.router";
-// import orderItemRouter from "./orderItem/orderItem.router";
+import orderItemRouter from "./orderItem/orderItem.router";
+import trafficRouter from "./traffic/traffic.router";
 
 const app = express();
 const port = 5000; // Port where the app will listen
 
 app.use(express.json());
 
-// GET /restaurant endpoint to fetch restaurant details
 app.use((_, res, next) => {
   res.set("Content-Type", "application/json");
   res.set("Access-Control-Allow-Origin", "*");
@@ -21,11 +20,12 @@ app.use((_, res, next) => {
 });
 
 const routers = [
-  restaurantRouter,
   tableRouter,
   menuCategoryRouter,
   menuItemRouter,
   orderRouter,
+  orderItemRouter,
+  trafficRouter,
 ];
 for (const router of routers) {
   app.use("/api/v1/", router);

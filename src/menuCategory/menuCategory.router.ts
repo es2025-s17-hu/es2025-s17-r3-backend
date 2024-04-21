@@ -51,7 +51,7 @@ const updateMenuCategory = async (req: Request, res: Response) => {
     res.json(updatedMenuCategory);
   } catch (error) {
     if (isNotFoundError(error)) {
-      res.status(404).send("MenuCategory not found");
+      res.status(404).send("Menu category not found");
       return;
     }
     console.error("Error updating menuCategory: ", error);
