@@ -4,7 +4,19 @@ import { db } from '../utils/db';
 
 class TableService {
     async getAllTables() {
-        return await db.table.findMany();
+        const tables = await db.table.findMany()
+        return await Promise.all(tables.map(async (table) => {
+            const lastOpenOrder = await db.order.findFirst({
+                where: {
+                    tableId: table.id,
+                    closedAt: null,
+                }
+            });
+            return {
+                ...table,
+                hasOpenOrder: !!lastOpenOrder,
+            };
+        }));
     }
 
     async createTable(table: Table) {
