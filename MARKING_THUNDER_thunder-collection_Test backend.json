@@ -1,0 +1,1293 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Test backend",
+    "collectionId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+    "dateExported": "2024-04-24T19:44:50.843Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "C1",
+            "containerId": "",
+            "created": "2024-04-24T18:41:44.597Z",
+            "sortNum": 5000
+        },
+        {
+            "_id": "f4cc8d39-b0b0-495e-b5f1-02f86c3212fa",
+            "name": "C2",
+            "containerId": "",
+            "created": "2024-04-24T19:02:18.129Z",
+            "sortNum": 7500
+        },
+        {
+            "_id": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "C3",
+            "containerId": "",
+            "created": "2024-04-24T19:08:06.546Z",
+            "sortNum": 8750
+        },
+        {
+            "_id": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "C4",
+            "containerId": "",
+            "created": "2024-04-24T19:21:03.381Z",
+            "sortNum": 9062.5
+        },
+        {
+            "_id": "864a470c-f0a6-4c2d-8d26-0e31bb44e79b",
+            "name": "C5",
+            "containerId": "",
+            "created": "2024-04-24T19:30:07.627Z",
+            "sortNum": 9218.8
+        },
+        {
+            "_id": "9c032bc7-014f-4f09-9166-703e3564fef1",
+            "name": "C6",
+            "containerId": "",
+            "created": "2024-04-24T19:39:56.205Z",
+            "sortNum": 9296.9
+        },
+        {
+            "_id": "dfc377ee-3683-4244-8579-5950face2551",
+            "name": "tables",
+            "containerId": "",
+            "created": "2024-04-24T18:37:24.837Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "db50e54e-9ca2-44dc-95d0-d60e291f7847",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "RESET DB",
+            "url": "/reset-db",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-04-24T18:43:42.988Z",
+            "modified": "2024-04-24T18:59:06.231Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "postReq": {
+                "inlineScripts": [
+                    {
+                        "script": [
+                            "tc.setVar(\"token\", \"\");"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "03228b36-8323-4d2a-8815-cc5a27eb7dd7",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "f4cc8d39-b0b0-495e-b5f1-02f86c3212fa",
+            "name": "Login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-04-24T19:02:59.071Z",
+            "modified": "2024-04-24T19:05:27.027Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jdoe\",\n  \"password\": \"dineease1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.token",
+                    "action": "equal",
+                    "value": "a31405d272b94e5d12e9a52a665d3bfe"
+                }
+            ],
+            "postReq": {
+                "inlineScripts": [
+                    {
+                        "script": [
+                            "if (tc.response.status == 200) {",
+                            "  tc.setVar(\"token\", tc.response.json.token, \"local\")",
+                            "}"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "1c99400f-9cdf-4429-bb6e-e5db3be876eb",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-04-24T19:21:41.241Z",
+            "modified": "2024-04-24T19:21:41.241Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jdoe\",\n  \"password\": \"dineease1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.token",
+                    "action": "equal",
+                    "value": "a31405d272b94e5d12e9a52a665d3bfe"
+                }
+            ],
+            "postReq": {
+                "inlineScripts": [
+                    {
+                        "script": [
+                            "if (tc.response.status == 200) {",
+                            "  tc.setVar(\"token\", tc.response.json.token, \"local\")",
+                            "}"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "a6af7e22-2ed6-4deb-b9a6-3082ee154526",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9c032bc7-014f-4f09-9166-703e3564fef1",
+            "name": "Get statistics",
+            "url": "/stats",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-24T18:37:24.846Z",
+            "modified": "2024-04-24T18:37:24.846Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "4de3cfb9-a8fe-4e9f-9893-1726ac734f63",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Login correct",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-24T18:37:24.848Z",
+            "modified": "2024-04-24T18:48:31.164Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jdoe\",\n  \"password\": \"dineease1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.token",
+                    "action": "equal",
+                    "value": "a31405d272b94e5d12e9a52a665d3bfe"
+                }
+            ]
+        },
+        {
+            "_id": "8361a08f-d5fc-4fed-8a0d-70c3ac4da5a8",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "f4cc8d39-b0b0-495e-b5f1-02f86c3212fa",
+            "name": "Get all menu categories",
+            "url": "/menuCategories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-24T19:02:37.393Z",
+            "modified": "2024-04-24T19:06:28.330Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "4aa5476a-3522-4a8b-b735-f0bf10d70a84",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-24T19:08:45.529Z",
+            "modified": "2024-04-24T19:08:45.529Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jdoe\",\n  \"password\": \"dineease1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.token",
+                    "action": "equal",
+                    "value": "a31405d272b94e5d12e9a52a665d3bfe"
+                }
+            ],
+            "postReq": {
+                "inlineScripts": [
+                    {
+                        "script": [
+                            "if (tc.response.status == 200) {",
+                            "  tc.setVar(\"token\", tc.response.json.token, \"local\")",
+                            "}"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "cef2b3b0-dd2a-420d-ab13-5523d9cc65e1",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Create new order",
+            "url": "/orders",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-24T19:21:26.406Z",
+            "modified": "2024-04-24T19:22:22.117Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"tableId\": 14\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "5c415e64-8e71-461c-b0b3-201ec9c29abe",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "864a470c-f0a6-4c2d-8d26-0e31bb44e79b",
+            "name": "Create new order item ",
+            "url": "/orderItems",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-24T19:30:19.067Z",
+            "modified": "2024-04-24T19:44:24.021Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"orderId\": 12362,\n  \"menuItemId\": 79,\n  \"quantity\": 2\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "a32fa904-aa26-4fd9-af0e-c459edc89c05",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Login incorrect 1",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 12500,
+            "created": "2024-04-24T18:55:32.038Z",
+            "modified": "2024-04-24T18:55:49.646Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jdoe\",\n  \"password\": \"dineease2\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "6ac741f3-30aa-499f-842c-82db972490bf",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Login incorrect 2",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-04-24T18:55:54.379Z",
+            "modified": "2024-04-24T18:56:30.338Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jane\",\n  \"password\": \"dineease1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "2c7d2821-725b-45b6-97e9-9e3d43dcd250",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Only admin can use /login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-24T18:48:42.240Z",
+            "modified": "2024-04-24T18:49:12.116Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jane\",\n  \"password\": \"dineease2\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "f288a1c8-5d64-42fb-9a43-5a79bce564ec",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "f4cc8d39-b0b0-495e-b5f1-02f86c3212fa",
+            "name": "Unaothorized: Get all menu categories",
+            "url": "/menuCategories",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-24T19:06:50.707Z",
+            "modified": "2024-04-24T19:07:45.768Z",
+            "headers": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "a3c8143b-b86e-4c79-b40e-d4461e71600a",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Get all menu items",
+            "url": "/menuItems",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-24T19:11:07.158Z",
+            "modified": "2024-04-24T19:11:07.158Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "36343f36-245e-4c26-a93d-94212af3b629",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Create new order: Table already has order",
+            "url": "/orders",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-24T19:22:32.644Z",
+            "modified": "2024-04-24T19:23:16.651Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"tableId\": 26\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Table already has an open order"
+                }
+            ]
+        },
+        {
+            "_id": "92b8a9f7-201a-4c1e-b0bd-13a5b2d0d6a5",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "864a470c-f0a6-4c2d-8d26-0e31bb44e79b",
+            "name": "Check: 2 Fritz Kolaa in order",
+            "url": "/orders/tables/{tableId}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-24T19:33:02.181Z",
+            "modified": "2024-04-24T19:33:12.500Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tableId",
+                    "value": "29",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "e4ac5020-f0e6-405d-9b74-a591555a996e",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Only admin can use /login 2",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-24T18:49:26.146Z",
+            "modified": "2024-04-24T18:49:40.941Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"bsmith\",\n  \"password\": \"dineease3\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "a6f70cb7-6690-4828-b037-62f9ba21f30d",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "f4cc8d39-b0b0-495e-b5f1-02f86c3212fa",
+            "name": "Unaothorized: Get all menu categories 2",
+            "url": "/menuCategories",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-24T19:07:16.950Z",
+            "modified": "2024-04-24T19:07:36.707Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "asdasdasdsadasds"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "7288127a-2f40-42bf-8ba7-a573053a3677",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Unaithrozed: get all menu items",
+            "url": "/menuItems",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-24T19:11:20.652Z",
+            "modified": "2024-04-24T19:11:33.809Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "asdasfmejwivmsfi"
+            }
+        },
+        {
+            "_id": "0d0ed948-99d3-4a96-89e0-48b327ba0cfc",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Create new order: Table not found",
+            "url": "/orders",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-24T19:23:24.081Z",
+            "modified": "2024-04-24T19:23:41.066Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"tableId\": 2699\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Table not found"
+                }
+            ]
+        },
+        {
+            "_id": "9fe102c7-6594-431c-ab77-8b154c641ec9",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "864a470c-f0a6-4c2d-8d26-0e31bb44e79b",
+            "name": "Create new order item : Error if no such order",
+            "url": "/orderItems",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-24T19:33:38.035Z",
+            "modified": "2024-04-24T19:39:01.182Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"orderId\": 123602,\n  \"menuItemId\": 79,\n  \"quantity\": 2\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "afeb213f-3ab4-4d44-8c1f-3b85f7f59b92",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Login PIN correct",
+            "url": "/login/pin",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-24T18:54:33.010Z",
+            "modified": "2024-04-24T18:55:05.966Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pin\": \"1234\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "json-query",
+                    "custom": "json.token",
+                    "action": "equal",
+                    "value": "5844a15e76563fedd11840fd6f40ea7b"
+                },
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                }
+            ]
+        },
+        {
+            "_id": "aa11aa56-d409-4afa-bba2-b5772ac00d04",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Create a new menu item",
+            "url": "/menuItems",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-24T19:11:55.177Z",
+            "modified": "2024-04-24T19:12:48.267Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Pizza Pacalos\",\n  \"type\": \"FOOD\",\n  \"menuCategoryId\": 13,\n  \"price\": 3200\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "6504ec0d-3e3c-470c-9216-a7afc079ae2e",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Get open order for table",
+            "url": "/orders/tables/{tableId}",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-24T19:23:58.399Z",
+            "modified": "2024-04-24T19:32:06.089Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tableId",
+                    "value": "26",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "64ccecac-b8cd-4bda-8c37-4d4e330653eb",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "864a470c-f0a6-4c2d-8d26-0e31bb44e79b",
+            "name": "Create new order item : Error if order closed",
+            "url": "/orderItems",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-24T19:35:28.469Z",
+            "modified": "2024-04-24T19:38:26.290Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"orderId\": 12338,\n  \"menuItemId\": 79,\n  \"quantity\": 2\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "fa3378e6-17c9-4bcc-9a8e-9f119009a0d9",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Login PIN incorrect",
+            "url": "/login/pin",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-24T18:55:17.219Z",
+            "modified": "2024-04-24T18:57:15.413Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pin\": \"9876\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "4496364b-612e-4104-8089-f624d40be213",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Create: Validation error: One of the mandatory fields is missing",
+            "url": "/menuItems",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-24T19:13:07.750Z",
+            "modified": "2024-04-24T19:13:29.376Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Pizza Pacalos\",\n  \"type\": \"FOOD\",\n  \"price\": 3200\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "One of the mandatory fields is missing"
+                }
+            ]
+        },
+        {
+            "_id": "f034fcb1-86aa-49d6-b870-d47cbd455989",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Get open order for table Error if no open order",
+            "url": "/orders/tables/{tableId}",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-24T19:24:46.652Z",
+            "modified": "2024-04-24T19:25:27.430Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tableId",
+                    "value": "34",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                }
+            ]
+        },
+        {
+            "_id": "503f3327-bba7-4c19-8b6f-6eefd2ccb08a",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Only Waiter canuse PIN 1",
+            "url": "/login/pin",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-04-24T18:57:21.077Z",
+            "modified": "2024-04-24T18:57:34.590Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pin\": \"9999\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "547ef10a-2a4e-4253-95d0-a6bf207aa91d",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Create: Validation error: Menucard category with the given ID does not exist",
+            "url": "/menuItems",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-04-24T19:13:50.585Z",
+            "modified": "2024-04-24T19:14:19.775Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Pizza Pacalos\",\n  \"type\": \"FOOD\",\n  \"menuCategoryId\": 99,\n  \"price\": 3200\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Menucard category with the given ID does not exist."
+                }
+            ]
+        },
+        {
+            "_id": "ae9557c4-a192-48af-96a3-6591bed045df",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Get open order for table Error if table doesnt exist",
+            "url": "/orders/tables/{tableId}",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-04-24T19:25:39.779Z",
+            "modified": "2024-04-24T19:26:34.681Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tableId",
+                    "value": "3499",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Order not found"
+                }
+            ]
+        },
+        {
+            "_id": "533692ca-da29-44a3-862c-a7cbb5a0ba34",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Only Waiter canuse PIN 2",
+            "url": "/login/pin",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-04-24T18:57:39.045Z",
+            "modified": "2024-04-24T18:57:58.001Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pin\": \"5678\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "401"
+                }
+            ]
+        },
+        {
+            "_id": "ae5fe1a4-77af-44f0-a702-de4ea30b1179",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Create: Validation error: Value of the type field is invalid",
+            "url": "/menuItems",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-04-24T19:14:33.296Z",
+            "modified": "2024-04-24T19:15:11.842Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Pizza Pacalos\",\n  \"type\": \"PIZZA\",\n  \"menuCategoryId\": 13,\n  \"price\": 3200\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Invalid type value"
+                }
+            ]
+        },
+        {
+            "_id": "1b8b4221-0551-480b-96e3-cf8a6505fdbb",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Close order",
+            "url": "/orders/tables/{tableId}/close",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-04-24T19:27:34.976Z",
+            "modified": "2024-04-24T19:28:36.318Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tableId",
+                    "value": "26",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Order not found"
+                }
+            ]
+        },
+        {
+            "_id": "cbfe21e8-1201-41f2-adf0-441f4736e378",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "ef8127a7-835b-4a32-8375-248538cb54d1",
+            "name": "Logut works (check if token deleted from db)",
+            "url": "/logout",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-04-24T19:00:20.211Z",
+            "modified": "2024-04-24T19:00:40.884Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                }
+            ]
+        },
+        {
+            "_id": "e28f29b3-0a56-43a3-a37b-dca34dd7bb22",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Update a menu item 1",
+            "url": "/menuItems/{id}",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-04-24T19:15:28.707Z",
+            "modified": "2024-04-24T19:16:32.012Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "155",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Pizza Pacalos Xoxo\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "0f6de2f4-1ba8-4e91-a917-dab2a009dca8",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Close order: Table has no order",
+            "url": "/orders/tables/{tableId}/close",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-04-24T19:28:20.584Z",
+            "modified": "2024-04-24T19:28:20.584Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tableId",
+                    "value": "26",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Order closed successfully"
+                }
+            ]
+        },
+        {
+            "_id": "ea289015-0683-4f74-a6e5-4c64ca93de0f",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Update a menu item 2",
+            "url": "/menuItems/{id}",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-04-24T19:18:04.190Z",
+            "modified": "2024-04-24T19:19:09.883Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "79",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Fritz Kolaa\",\n  \"type\": \"DRINK\",\n  \"menuCategoryId\": 20,\n  \"price\": 999\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "72386980-6f79-4882-925a-db6ecb20556e",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "0e2e7847-d559-498c-a114-6720d1bb1860",
+            "name": "Close order: Table doesnt exist",
+            "url": "/orders/tables/{tableId}/close",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-04-24T19:29:15.596Z",
+            "modified": "2024-04-24T19:29:34.178Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tableId",
+                    "value": "2699",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Order not found"
+                }
+            ]
+        },
+        {
+            "_id": "97832321-6c43-430a-a095-dd7f04b05087",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Update a menu 404",
+            "url": "/menuItems/{id}",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-04-24T19:19:22.053Z",
+            "modified": "2024-04-24T19:19:48.363Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "79999",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Fritz Kolaa\",\n  \"type\": \"DRINK\",\n  \"menuCategoryId\": 20,\n  \"price\": 999\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Menu item not found"
+                }
+            ]
+        },
+        {
+            "_id": "1b9a368e-a67b-4207-b42c-bbb89a95b846",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "9e12f7c9-92b1-43e3-938a-fb5b317a1504",
+            "name": "Delete a menu item",
+            "url": "/menuItems/{id}",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-04-24T19:20:17.551Z",
+            "modified": "2024-04-24T19:20:53.033Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "155",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "Menu item deleted"
+                }
+            ]
+        },
+        {
+            "_id": "ea0d28d1-a21b-4878-bd00-9e86d93b388d",
+            "colId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
+            "containerId": "dfc377ee-3683-4244-8579-5950face2551",
+            "name": "DO NOT IMPLEMENT! Get all tables",
+            "url": "/tables",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-04-24T18:37:24.847Z",
+            "modified": "2024-04-24T18:37:24.847Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "{{baseUrl}}"
+        }
+    },
+    "ref": "O2nCqXTTGBGKCCiYgNmY5e2b6q9OrIvemUvfj9lApL3IGQkUWL9B-LVRUT4hx8cVdQh9MumgTAOnnooYOfchyw"
+}
