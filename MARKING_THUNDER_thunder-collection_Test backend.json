@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "Test backend",
     "collectionId": "95f581e7-56ee-4107-bbed-b83f845dbaa1",
-    "dateExported": "2024-04-24T19:44:50.843Z",
+    "dateExported": "2024-04-25T07:58:07.111Z",
     "version": "1.2",
     "folders": [
         {
@@ -1289,5 +1289,5 @@
             "baseUrl": "{{baseUrl}}"
         }
     },
-    "ref": "O2nCqXTTGBGKCCiYgNmY5e2b6q9OrIvemUvfj9lApL3IGQkUWL9B-LVRUT4hx8cVdQh9MumgTAOnnooYOfchyw"
+    "ref": "O2nCqXTTGBGKCCiYgNmY5QIiKOE6vFPfAFkT65r8q21NuJ2E0eaAUq0pb7qmj_KOvkcnpjlqEYobJT4vh4lgjQ"
 }
